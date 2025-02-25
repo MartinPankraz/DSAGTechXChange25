@@ -40,6 +40,6 @@ SAP credentials to connect to the SAP system PM0 will be provided later in this 
 
 ## Where to next?
 
-** [ Quest 1 >](student/Quest1.md)
+** [🤖 Quest 1 >](student/Quest1.md)
 
 [🔝](#)

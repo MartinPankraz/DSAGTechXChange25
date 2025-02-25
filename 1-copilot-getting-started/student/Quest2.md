@@ -1,5 +1,5 @@
-# 3. Challenge 2: Setup Flow + SAP OData Connector
-[< Quest 1](Quest1.md) - **[Quest 3 >](Quest3.md)**
+# 🔌 3. Challenge 2: Setup Flow + SAP OData Connector
+[< 🤖 Quest 1](Quest1.md) - **[🔧 Quest 3 >](Quest3.md)**
 
 In Challenge 2, we will setup a Power Automate flow and connect it to an SAP OData Connector. This involves creating a new flow, where we will add an SAP OData action, specifically choosing to query OData entities in SAP.
 
@@ -99,6 +99,6 @@ Only for testing purposes, you may also specifically set the SAP connection as d
  
 # Where to next?
 
-**[Quest 1](Quest1.md) - [ Quest 3 >](Quest3.md)
+**[🤖 Quest 1](Quest1.md) - [🔧 Quest 3 >](Quest3.md)
 
 [🔝](#)
