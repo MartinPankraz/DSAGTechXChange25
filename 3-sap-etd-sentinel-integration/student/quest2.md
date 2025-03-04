@@ -2,6 +2,8 @@
 
 [< Quest 1 ](quest1.md) - **[🏠Home](../README.md)** - [ Quest 3 >](quest3.md)
 
+Skip this if the clock is ticking on you. Learnings of quest 3 are at the heart of this lab.
+
 This quest is about sneaking in the phishing lure and increasing the chance to make someone use it.
 
 ## Weaponize an email
