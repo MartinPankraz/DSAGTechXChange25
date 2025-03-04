@@ -1,0 +1,1 @@
+docker run -it -p 443:443 --name my-evilginx-container my-evilginx-kali:latest 
