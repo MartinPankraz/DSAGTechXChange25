@@ -1,1 +1,0 @@
-# Deploy first SAP IDM scenario to Microsoft Entra ID
