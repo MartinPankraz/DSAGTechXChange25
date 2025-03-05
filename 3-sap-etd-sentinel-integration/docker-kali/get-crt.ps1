@@ -1,0 +1,1 @@
+docker cp my-evilginx-container:/root/.evilginx/crt/ca.crt ./ca.crt

@@ -14,7 +14,7 @@ Find us on-site in Wiesbaden. We are looking forward to meeting you in person! �
 | Copilot Studio & SAP: Building Autonomous Agents | H12 & H32 | 👉[⛩️](./2-copilot-agents/README.md) | Learn how to |
 | Hack SAP in 2 hours - SAP ETD joins Sentinel | W01 | 👉[🧙](./3-sap-etd-sentinel-integration/README.md) | Learn how to build |
 | Secure SAP app integration with Microsoft | H33 | 👉[🧙](./4-power-platform-sap-principal-propagation/README.md) | Learn how to build |
-| Deploy first SAP IDM scenario to Microsoft Entra ID | H03 | 👉[🧙]() | Learn how to build |
+| Deploy first SAP IDM scenario to Microsoft Entra ID | H03 | 👉[🧙](./5-sap-idm-entra-id/README.md) | Learn how to build |
 
 > [!TIP]
 >🏆Finish the final quest, collect the pass phrase, and redeem it to claim [your badge](https://webhostingforconverter.z16.web.core.windows.net/claim-reward.html) 😎
