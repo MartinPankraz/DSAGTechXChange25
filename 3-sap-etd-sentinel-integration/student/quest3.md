@@ -92,7 +92,7 @@ The **SAP - Networks** watchlist currently contains one entry which represents t
 
 Select **Analytics** from the menu and switch to the **Rule templates** tab.
 
-Search for a built-in rule template to detect logins from unexpected networks by entering "Login from" in the search bar. On the "SAP - Login from unexpected network" built-in rule, select **Create rule**. 
+Search for a built-in rule template to detect logins from unexpected networks by entering "Login from" in the search bar. On the "SAP ETD - Login from unexpected network" built-in rule, select **Create rule**. 
 <p align="center" width="100%">
 <img alt="Step 11" src="assets/quest3/3-11.png"  width="600">
 </p>
@@ -121,7 +121,7 @@ Copilot will add the required expressions to the built-in query. Check the propo
 <img alt="Step 15" src="assets/quest3/3-15.png"  width="600">
 </p>
 
-Replace the rule logic with the Copilot proposal from the clipboard. 
+Replace the rule logic with the Copilot proposal from the clipboard.
 
 Change the placeholder in the variable definition (here "your_specific_user")
 
@@ -162,7 +162,7 @@ Enter a name for your rule that identifies the user, e.g. *"User1 - Send notific
 
 Select **Run playbook** from **Actions**.
 
-Select the playbook for your user (e.g. *PlaybookUnexpectedNetworkLogin**User1***) from the list of playbooks. You will take a closer look at the playbook in [Quest 5](quest5.md) and enhance it with additional logic.
+Select the playbook for your user (e.g. *PlaybookUnexpectedNetworkLogin**User1***) from the list of playbooks. You will take a closer look at the playbook in a bit.
 
 Click **Apply**.
 <p align="center" width="100%">
@@ -224,7 +224,7 @@ In the *body* section, scroll down to find the incident's ID that triggered the 
 <img alt="Step 27" src="assets/quest3/3-27.png"  width="600">
 </p>
 
-### Check the notification in Teams
+### Check the notification in Microsoft Teams
 
 Finally, login to [Microsoft Teams](https://teams.microsoft.com) with the SOC user **sapsentinel@bestruncorp.onmicrosoft.com**. Login with the same password as for your user.
 
@@ -260,7 +260,7 @@ The link takes you directly to the incident details in Sentinel.
 
 ### Check the Alert status in SAP ETD
 
-Finally, let's check the resolved status of the alert in SAP ETD. That closes the loop of the scenario by keeping the alert status in sync across the tools.
+Finally, let's check the resolved status of the alert in SAP ETD triggered by the last step on your LogicApp. That closes the loop of the scenario by keeping the alert status in sync across the tools.
 
 Congratulations for completing quest 3!
 
