@@ -55,10 +55,10 @@ Our journey will start from the very beginning and will take you through the fol
 🌟
 🕒 10 min
 
-## [(Optional) Quest 2](quest2.md) - Weaponize your link and lure some phish
+## [Quest 2](quest2.md) - Weaponize your link and lure some phish
 
 🌟🌟
-🕒 10 mins
+🕒 15 mins
 
 ## [Quest 3](quest3.md) - Analyze the catch with SAP ETD + Microsoft Sentinel for SAP and support remediation
 

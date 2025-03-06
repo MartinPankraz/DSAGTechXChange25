@@ -1,4 +1,4 @@
-# Hack SAP in 2 hours - SAP ETD joins Sentinel👾
+# Hack SAP in 2 hours - SAP ETD joins Microsoft Sentinel👾
 
 Welcome to your **red teaming hands-on lab** experience! This repos gets you all setup to embark on your assigned epic quest. Excited yet?
 

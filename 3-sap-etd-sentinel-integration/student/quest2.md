@@ -2,11 +2,11 @@
 
 [< Quest 1 ](quest1.md) - **[🏠Home](../README.md)** - [ Quest 3 >](quest3.md)
 
-Skip this if the clock is ticking on you. Learnings of quest 3 are at the heart of this lab.
-
 This quest is about sneaking in the phishing lure and increasing the chance to make someone use it.
 
 ## Weaponize an email
+
+<details><summary>Optional phishing mail creation with GenAI</summary>
 
 * Use the devious lure created before to craft a convincing email.
 
@@ -59,6 +59,8 @@ If you don't succeed in getting the AI to generate the email, you can always use
 * Share your final phishing lure result (email body or app screenshot) with the team for mutual learning.
 
 * Next, pull in your phish by either clicking the link from your email or pasting the URL generated in Quest 1 directly into your browser. You are acting now as the victim or the hacker testing the lure so to say.
+
+</details>
 
 ## Enjoy your phish
 
