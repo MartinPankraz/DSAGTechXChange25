@@ -1,4 +1,4 @@
-# (Optional) Quest 2 - Lure some phish
+# Quest 2 - Lure some phish
 
 [< Quest 1 ](quest1.md) - **[🏠Home](../README.md)** - [ Quest 3 >](quest3.md)
 
