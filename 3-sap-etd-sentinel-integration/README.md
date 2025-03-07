@@ -51,4 +51,4 @@ This workshop gives you a glimpse into the world of a [red team'er](https://en.w
 
 ## 📢Feedback
 
-This repos encourages contributions and feedback via the [GitHub Issues](https://github.com/MartinPankraz/sap-hacker-in-a-day/issues/new/choose).
+This repos encourages contributions and feedback via the [GitHub Issues](https://github.com/MartinPankraz/DSAGTechXChange25/issues/new/choose).
