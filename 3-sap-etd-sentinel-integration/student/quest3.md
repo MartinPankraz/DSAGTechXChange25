@@ -41,6 +41,17 @@ The Click on 'Go'
 </p>
 
 Click on the ID of the found Alert, and look at the details
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-44.jpg"  width="600">
+</p>
+You can e.g. see the timestamp when the alert was raised, which User ID, IP Address, System ID, Semantic Event were involved.
+
+By clicking on the Events-link, you can see all details about the normalized triggering events that finally triggered the alert.
+By clicking at the small arrow right to the event, you can see all normalized attributes about a single log event (like the semantic event name, the technical event ID, the log type, the system ID, etc.)
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-43.jpg"  width="600">
+</p>
+
 
 ### Login to Azure Portal
 
