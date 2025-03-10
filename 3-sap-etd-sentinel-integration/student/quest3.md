@@ -17,7 +17,9 @@ In this quest, you will analyze your SAP alert ingested from SAP ETD, identify t
 Navigate to SAP Enterprise Threat Detection via the link: [SAP Enterprise Threat Detection, cloud edition ](https://etd-cloud-workshop-partner-nten9gd6-monitoringapprouter.prod.monitoring.etd-cloud.cfapps.eu10-004.hana.ondemand.com/cp.portal/site?targetTenantId=9189d8d0-c3ea-4f11-a145-1a7d13e32c3d&origin=monitoring#Shell-home)
 
 In the UI, select Identity Provider httpsetdtestlogs.accounts.ondemand.c
-
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-40.jpg"  width="600">
+</p>
 
 Login with User: SAPHackInADay
 PW: hkjhhkjhkjh??kjlk (tbd)
