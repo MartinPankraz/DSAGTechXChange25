@@ -29,6 +29,15 @@ Go to Tile: 'Manage Alerts'
 <img alt="Step 1" src="assets/quest3/3-41.jpg"  width="600">
 </p>
 
+In the Alerts Tile 
+Select for the Alert: Access to unallowed IP Address
+Select as Trigger Value 1: The name of the user ID you hacked te cookie any logged into the SAP system.
+The Click on 'Go'
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-42.jpg"  width="600">
+</p>
+
+
 ### Login to Azure Portal
 
 Login with your user (e.g. user1@bestruncorp.onmicrosoft.com) to the [Azure Portal](https://portal.azure.com).
