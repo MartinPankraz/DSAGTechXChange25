@@ -25,6 +25,10 @@ Login with User: SAPHackInADay
 PW: hkjhhkjhkjh??kjlk (tbd)
 
 Go to Tile: 'Manage Alerts'
+In the UI, select Identity Provider httpsetdtestlogs.accounts.ondemand.c
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-41.jpg"  width="600">
+</p>
 
 ### Login to Azure Portal
 
