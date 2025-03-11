@@ -13,6 +13,7 @@ Login to Copilot Studio [https://copilotstudio.microsoft.com/](https://copilotst
 > ![More information](../images/MoreInfo.jpg)
 > 
 > and click on *Skip setup*
+> 
 > ![Skip Setup](../images/SkipSetup.jpg)
 > 
 
@@ -51,8 +52,25 @@ Then click on **Create**
 
  
 ## 2.2 Activate “Generative AI” Feature
-Go to the Settings of the Copilot and activate the feature.
+Now that the *Copilot Studio Agent* is created, open the Settings
+![Open Settings](../images/OpenSettings.jpg)
+
+Select *Generate AI* on the left, then *Generative (preview)* and click on *Save*
+![Enable Generative AI](../images/EnableGenAi.jpg)
+
+
+## 2.3. Ask a first questions
+Now *Close* the Settings screen and use the *Test your agent* to interact with your new Agent. 
+![First Questions](../images/FirstQuestion.jpg)
+
+>[!Note]
+> Obviously at the moment it is a generic Agent and does not have access to any external data (like your SAP system)
+
  
+
+
+--- We need to see if we can get a Teams license ---
+
 ## 2.3 Add the Copilot to Teams
 Publish the Copilot first:
  
@@ -62,7 +80,7 @@ Then connect to Teams:
  
 Open the copilot in teams and run a simple test by typing “Hi” to see if it works.
  
- 
+ --- We need to see if we can get a Teams license ---
 
 # Where to next?
 
