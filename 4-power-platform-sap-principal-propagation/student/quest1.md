@@ -12,11 +12,10 @@ https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC/
 
 See the entity `BusinessPartnerSet`
 
-> [!NOTE] later on you will be calling the OData service from API Management, not directly on SAP Gateway. This is only possible in this setup, because the SAP system is exposed to the internet.
+> [!NOTE]
+> later on you will be calling the OData service from API Management, not directly on SAP Gateway. This is only possible in this setup, because the SAP system is exposed to the internet.
 
-## Step 2: See the OAuth and SSO setup
-
-[video reference: minute 5:20](https://www.youtube.com/watch?v=AcM67FBIEB4&list=PLvqyDwoCkBXYHECuHw2pKN2DrWjyn3q5f&index=9&t=320s)
+## Step 2: Understand the OAuth and SSO setup
 
 ### SAP OAuth Server
 
@@ -28,7 +27,9 @@ That client trusts our bestrun Entra ID tenant.
 
 ![Screenshot of OAuth trust setup with Entra ID bestrun tenant](assets/1-2.png)
 
-### Entra ID enterprise app registration (SAP Netweaver)
+[video reference: minute 5:20](https://www.youtube.com/watch?v=AcM67FBIEB4&list=PLvqyDwoCkBXYHECuHw2pKN2DrWjyn3q5f&index=9&t=320s)
+
+### Entra ID enterprise app registration (SAP NetWeaver)
 
 This app hosts the SSO setup for the SAP system. It is configured to use the OAuth client created in the previous step.
 
@@ -40,7 +41,7 @@ For segregation of concerns, we created a separate app registration for API Mana
 
 ![Screenshot of Entra ID Enterprise App of SAP NetWeaver SSO config](assets/1-2-3.png)
 
-We take note of app id URI for later in Power Automate.
+### We take note of app id URI for later in Power Automate
 
 ```bash
 api://ad565609-cd89-4875-85a3-379ce2423f45
@@ -80,7 +81,8 @@ https://portal.azure.com/?feature.customportal=false#@bestruncorp.onmicrosoft.co
   * **Base URL (take note of this for later)**: `https://bestrun-apim.azure-api.net/your-sap-username/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
   * **Subscription required**: `unchecked`
 
-> [!NOTE] SAP OData APIs can be registered via their OData or OpenAPI definition. The required conversion from OData to OpenAPI can be done from converters like [this](https://convert.odata-openapi.net/). The underlying foundation is maintained by the Oasis foundation, which leads the standardization of OData. The OData to OpenAPI converter is open source and available on [GitHub](https://github.com/MartinPankraz/odata-openapi)
+> [!NOTE]
+> SAP OData APIs can be registered via their OData or OpenAPI definition. The required conversion from OData to OpenAPI can be done from converters like [this](https://convert.odata-openapi.net/). The underlying foundation is maintained by the Oasis foundation, which leads the standardization of OData. The OData to OpenAPI converter is open source and available on [GitHub](https://github.com/MartinPankraz/odata-openapi)
 
 ### Call your new SAP OData API registered on Azure API Management using Basic Authentication
 

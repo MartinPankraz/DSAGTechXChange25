@@ -8,7 +8,8 @@ Consider especially the center of the image depicting the assets **policy** and 
 
 ![Overview of integration architecture](assets/2-0.png)
 
-> [!NOTE] In case your wonder about SAP API Management, find the same policy published officially on the [SAP Business Accelerator Hub](https://api.sap.com/policytemplate/Principal_Propagation_via_Entra_Id). We co-authored them with SAP and released the [joint blog here](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-members/integrating-low-code-solutions-with-microsoft-using-sap-integration-suite/ba-p/13789298).
+> [!NOTE]
+> In case your wonder about SAP API Management, find the same policy published officially on the [SAP Business Accelerator Hub](https://api.sap.com/policytemplate/Principal_Propagation_via_Entra_Id). We co-authored them with SAP and released the [joint blog here](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-members/integrating-low-code-solutions-with-microsoft-using-sap-integration-suite/ba-p/13789298).
 
 ## Import the SAP Principal Propagation policy
 
@@ -25,7 +26,7 @@ Now your SAP OData API only accepts OAuth 2.0 tokens issued by the SAP OAuth ser
 
 ## Supply the named values
 
-* Navigate to the **Named Values** section of your API Management instance and create the following named values always prefixed with `your-sap-username_`:
+* Navigate to the **Named Values** section of your API Management instance and create the following named values always prefixed with `your-sap-username_`
 
 | Named Value                        | Description          |
 |------------------------------------|----------------------|
