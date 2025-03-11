@@ -9,11 +9,15 @@ Login to Copilot Studio [https://copilotstudio.microsoft.com/](https://copilotst
 
 > [!Note]
 > If you are promted to provider "More information", click on *Next*
+> 
 > ![More information](../images/MoreInfo.jpg)
+> 
 > and click on *Skip setup*
 > ![Skip Setup](../images/SkipSetup.jpg)
+> 
 
 When asked to *Stay signed in* click on *Yes*
+
 ![Stay Signedin](../images/StaySignedIn.jpg)
 
 Skip the *Welcome to Copilot Studio* screen

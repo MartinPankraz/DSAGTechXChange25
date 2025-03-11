@@ -1,5 +1,5 @@
-# 4. Challenge 3: Change data in SAP
-[< Quest 2](Quest2.md) - **[Quest 4 >](Quest4.md)**
+# 🔧 4. Challenge 3: Change data in SAP
+[< 🔌 Quest 2](Quest2.md) - **[Quest 4 >](Quest4.md)**
 
 In this challenge you will learn how to:
 * The difference between Actions and Topics.
@@ -236,6 +236,6 @@ Restart the agent if necessary:
  
 # Where to next?
 
-**[Quest 2](Quest2.md) - [ Quest 4 >](Quest4.md)
+**[🔌Quest 2](Quest2.md) - [ Quest 4 >](Quest4.md)
 
 [🔝](#)
