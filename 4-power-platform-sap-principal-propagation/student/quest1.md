@@ -16,13 +16,37 @@ See the entity `BusinessPartnerSet`
 
 ## Step 2: See the OAuth and SSO setup
 
+[video reference: minute 5:20](https://www.youtube.com/watch?v=AcM67FBIEB4&list=PLvqyDwoCkBXYHECuHw2pKN2DrWjyn3q5f&index=9&t=320s)
+
 ### SAP OAuth Server
 
-We prepared an OAuth client in the SAP system for you authorized for the OData service GWSAMPLE_BASIC with scope `ZGWSAMPLE_BASIC_0001`. That client trusts our bestrun Entra ID tenant.
+We prepared an OAuth client in the SAP system for you authorized for the OData service GWSAMPLE_BASIC with scope `ZGWSAMPLE_BASIC_0001`. 
+
+![Screenshot of OAuth client setup on SAP](assets/1-2-1.png)
+
+That client trusts our bestrun Entra ID tenant.
+
+![Screenshot of OAuth trust setup with Entra ID bestrun tenant](assets/1-2.png)
 
 ### Entra ID enterprise app registration (SAP Netweaver)
 
+This app hosts the SSO setup for the SAP system. It is configured to use the OAuth client created in the previous step.
+
+![Screenshot of Entra ID Enterprise App of SAP NetWeaver SSO config](assets/1-2-2.png)
+
 ### Entra ID app registration (API Management)
+
+For segregation of concerns, we created a separate app registration for API Management to abstract away the complexity of calling SAP. This app is used to call the SAP OData API for any consumer apps authorized on APIM. In our case Microsoft Power Automate. It is configured to use the OAuth client created in the previous step.
+
+![Screenshot of Entra ID Enterprise App of SAP NetWeaver SSO config](assets/1-2-3.png)
+
+We take note of app id URI for later in Power Automate.
+
+```bash
+api://ad565609-cd89-4875-85a3-379ce2423f45
+```
+
+[video reference: minute 8:50](https://www.youtube.com/watch?v=AcM67FBIEB4&list=PLvqyDwoCkBXYHECuHw2pKN2DrWjyn3q5f&index=9&t=530s)
 
 ## Step 3: Register the SAP OData API in Azure API Management
 
