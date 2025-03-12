@@ -54,6 +54,11 @@ By clicking at the small arrow right to the event, you can see all normalized at
 
 For an introduction into SAP Enterprise Threat Detection, cloud edition, and a description of a UI roundtrip, plus explanation of the semantic data model, please see [SAP Enterprise Threat Detection, cloud edition, introduction and UI roundtrip ](assets/quest3/ETD_Intro_and_UI_Roundtrip.pdf).
 
+After having finished your exploration of SAP Enterprise Threat Detection, cloud edition, you can log off.
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-45.jpg"  width="600">
+</p>
+
 ### Login to Azure Portal
 
 Login with your user (e.g. user1@bestruncorp.onmicrosoft.com) to the [Azure Portal](https://portal.azure.com).
