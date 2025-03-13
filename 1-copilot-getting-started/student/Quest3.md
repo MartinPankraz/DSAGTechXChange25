@@ -232,7 +232,8 @@ properties:
   TypeCode: String
   WeightMeasure: Number
   WeightUnit: String
-  Width: Number````
+  Width: Number
+  ````
 ![Paste schema](../images/Quest3/PasteSchemaAndConfirm.jpg)
 
 ## 4.5 Add Question about required change
