@@ -22,6 +22,7 @@ SAP Principal Propagation is a mechanism that allows the mapping of a non-SAP en
 
 ### YouTube sessions
 
+[Power Platform + SAP OData Services | Step by step guide](https://www.youtube.com/watch?v=AcM67FBIEB4&list=PLvqyDwoCkBXYHECuHw2pKN2DrWjyn3q5f&index=9)
 [SSO with SAP APIM and Power Platform | SAP as guest on the show](https://youtu.be/nQplgEHASAI)
 [Power Platform & SSO deep dive](https://youtu.be/92jYUT712wY)
 [Expanded SSO for SAP Connectors](https://youtu.be/7M0C_-tsa2Q)
