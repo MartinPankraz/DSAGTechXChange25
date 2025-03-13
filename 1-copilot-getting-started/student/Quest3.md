@@ -47,6 +47,10 @@ In the last action *Respond to Copilot* change the Parameters to ````ProductDeta
 ````text
 Return details for a given product ID
 ````
+and click on the *Flash* icon and add
+````json
+outputs('Query_OData_entities')?['body/data']
+````
 ![Change response  parameter](../images/Quest3/ChangeRespondToCopilot.jpg)
 
 Then click on *Publish* to save and Publish the flow. 
@@ -188,48 +192,47 @@ The schema needs to be generated or provided. Here, we are providing it to speed
 
 Copy/paste the following text into the *Edit schema* box and click on *Confirm*
 ````text
-        kind: Table
-        properties:
-         Category: String
-         ChangedAt: String
-         CreatedAt: String
-         CurrencyCode: String
-         Depth: Number
-         Description: String
-         DescriptionLanguage: String
-         DimUnit: String
-         Height: Number
-         MeasureUnit: String
-         Name: String
-         NameLanguage: String
-         Price: Number
-         ProductID: String
-         SupplierID: String
-         SupplierName: String
-         TaxTarifCode: Number
-         ToSalesOrderLineItems:
-           type:
-            kind: Record
-            properties:
-              AssociationLinkUrl: Blank
-              IsCollection: Boolean
-              Name: String
-              Url: String
+kind: Table
+properties:
+  Category: String
+  ChangedAt: String
+  CreatedAt: String
+  CurrencyCode: String
+  Depth: Number
+  Description: String
+  DescriptionLanguage: String
+  DimUnit: String
+  Height: Number
+  MeasureUnit: String
+  Name: String
+  NameLanguage: String
+  Price: Number
+  ProductID: String
+  SupplierID: String
+  SupplierName: String
+  TaxTarifCode: Number
+  ToSalesOrderLineItems:
+    type:
+      kind: Record
+      properties:
+        AssociationLinkUrl: Blank
+        IsCollection: Boolean
+        Name: String
+        Url: String
 
-         ToSupplier:
-          type:
-           kind: Record
-           properties:
-              AssociationLinkUrl: Blank
-              IsCollection: Boolean
-              Name: String
-              Url: String
+  ToSupplier:
+    type:
+      kind: Record
+      properties:
+        AssociationLinkUrl: Blank
+        IsCollection: Boolean
+        Name: String
+        Url: String
 
-         TypeCode: String
-         WeightMeasure: Number
-         WeightUnit: String
-         Width: Number
-````
+  TypeCode: String
+  WeightMeasure: Number
+  WeightUnit: String
+  Width: Number````
 ![Paste schema](../images/Quest3/PasteSchemaAndConfirm.jpg)
 
 ## 4.5 Add Question about required change
