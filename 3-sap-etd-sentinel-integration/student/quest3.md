@@ -303,6 +303,13 @@ The link takes you directly to the incident details in Sentinel.
 
 Finally, let's check the resolved status of the alert in SAP ETD triggered by the last step on your LogicApp. That closes the loop of the scenario by keeping the alert status in sync across the tools.
 
+To jump to the Alerts Tile in SAP ETD, use the link [ETD Alerts](https://etd-cloud-workshop-partner-nten9gd6-monitoringapprouter.prod.monitoring.etd-cloud.cfapps.eu10-004.hana.ondemand.com/cp.portal/site?targetTenantId=9189d8d0-c3ea-4f11-a145-1a7d13e32c3d&origin=monitoring#alerts-display?sap-ui-app-id-hint=etd.cloud.alerts.ui&/?creationTimeFilterMode=Relative&creationTimeRelativeValue=1&creationTimeRelativeUnit=Days&orderBy=RemainingReactionTime&orderDesc=true)
+
+There you enter the Alert ID in the field for Direct Access to an Alert ID, and then click the Open button.
+<p align="center" width="100%">
+<img alt="Step 33" src="assets/quest3/3-46.jpg"  width="600">
+</p>
+
 Congratulations for completing quest 3!
 
 > [!TIP]
