@@ -124,6 +124,22 @@ and paste the cookie you copied from the Evilginx3 console (see image from step 
 <img alt="Cookie editor" src="assets/quest2/done.png"  width="600">
 </p>
 
+As you are already there, yo can even try to miss-use your stolen logon to get out some data from the system. E.g. you can call the function (normally as known transaction SE37) to test call the function module BAPI_USER_GET_DETAIL, which returns by manual execution the user data plus as well the password hash, to be maybe acked and miss used later if passwords are too easy (e.g. dictionary like, football club names, ...).
+
+Call the link to start SE37 from Fiori: https://host:port/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-startGUI?sap-ui2-tcode=SE37&sap-system=FIORI_MENU
+
+The function Builder opens. Enter BAPI_USER_GET_DETAIL into the field for the function module and click on the Test/Execute Button
+<p align="center" width="100%">
+<img alt="Cookie editor" src="assets/quest2/done.png"  width="600">
+</p>
+
+In the following screen ener the user with User ID USER160, or your own user ID via which you are logged in, and click on Execute.
+<p align="center" width="100%">
+<img alt="Cookie editor" src="assets/quest2/done.png"  width="600">
+</p>
+
+In the return you can see the details for this user. Fortunately the hash values are not filled, because authntication works via logon Tokens.
+
 > [!NOTE]
 > To raise the bar for attackers, consider [Phish-resistant Multi-Factor Authentication](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths). In addition to that [conditional access policies](https://learn.microsoft.com/entra/identity/conditional-access/overview) can be used to block access from certain locations or devices.
 
