@@ -138,7 +138,7 @@ In the following screen ener the user with User ID USER160, or your own user ID 
 <img alt="Cookie editor" src="assets/quest2/done.png"  width="600">
 </p>
 
-In the return you can see the details for this user. Fortunately the hash values are not filled, because authntication works via logon Tokens.
+In the return you can see the details for this user. Fortunately the hash values are not filled, because authentication works via logon Tokens.
 
 > [!NOTE]
 > To raise the bar for attackers, consider [Phish-resistant Multi-Factor Authentication](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths). In addition to that [conditional access policies](https://learn.microsoft.com/entra/identity/conditional-access/overview) can be used to block access from certain locations or devices.
