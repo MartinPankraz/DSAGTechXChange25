@@ -130,12 +130,12 @@ Call the link to start SE37 from Fiori: https://host:port/sap/bc/ui5_ui5/ui2/ush
 
 The function Builder opens. Enter BAPI_USER_GET_DETAIL into the field for the function module and click on the Test/Execute Button
 <p align="center" width="100%">
-<img alt="Cookie editor" src="assets/quest2/done.png"  width="600">
+<img alt="Cookie editor" src="assets/quest2/2-01.jpg"  width="600">
 </p>
 
 In the following screen ener the user with User ID USER160, or your own user ID via which you are logged in, and click on Execute.
 <p align="center" width="100%">
-<img alt="Cookie editor" src="assets/quest2/done.png"  width="600">
+<img alt="Cookie editor" src="assets/quest2/2-02.jpg"  width="600">
 </p>
 
 In the return you can see the details for this user. Fortunately the hash values are not filled, because authentication works via logon Tokens.
