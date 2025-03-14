@@ -52,6 +52,17 @@ By clicking at the small arrow right to the event, you can see all normalized at
 <img alt="Step 1" src="assets/quest3/3-43.jpg"  width="600">
 </p>
 
+Additionally you can look at other Alerts which you might have created in Quest2, by calling a Function Module in Test Mode.
+Go back to the Alert list and search for Alert with name 'Critical Function module call in Test framework calls'.
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-47.jpg"  width="600">
+</p>
+
+By clicking on the Alert ID yoz can again look into the detauls as well as into the triggering events.
+<p align="center" width="100%">
+<img alt="Step 1" src="assets/quest3/3-48.jpg"  width="600">
+</p>
+
 For an introduction into SAP Enterprise Threat Detection, cloud edition, and a description of a UI roundtrip, plus explanation of the semantic data model, please see [SAP Enterprise Threat Detection, cloud edition, introduction and UI roundtrip ](assets/quest3/ETD_Intro_and_UI_Roundtrip.pdf).
 
 After having finished your exploration of SAP Enterprise Threat Detection, cloud edition, you can log off.
