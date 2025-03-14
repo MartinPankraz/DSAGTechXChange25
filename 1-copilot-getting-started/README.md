@@ -1,4 +1,6 @@
 # Copilot Studio & SAP: Getting started
+** [🤖 Quest 1 >](student/Quest1.md)
+
 ## 1. Introduction
 Welcome to the DSAG TechXChange 2025 Hands-on lab. This document provides an overview of the Hands-on activities, challenges, and resources available to participants.
 
