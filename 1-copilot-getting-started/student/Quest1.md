@@ -69,19 +69,6 @@ Now *Close* the Settings screen and use the *Test your agent* to interact with y
  
 
 
---- We need to see if we can get a Teams license ---
-
-## 2.3 Add the Copilot to Teams
-Publish the Copilot first:
- 
-Make sure you have already started the Teams trial as mentioned in the Getting ready for the lab section before the next step.
-
-Then connect to Teams:
- 
-Open the copilot in teams and run a simple test by typing “Hi” to see if it works.
- 
- --- We need to see if we can get a Teams license ---
-
 # Where to next?
 
 **[🏠Home](../README.md)** - [🔌 Quest 2 >](Quest2.md)

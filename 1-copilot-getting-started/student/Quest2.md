@@ -157,19 +157,7 @@ Go back to the Copilot Studio tab and click on Retry. As a result you should see
 ![Retry Connection](../images/RetryConnection.jpg)
 
 
------- Lets see if we get Teams licenses -------
-## 3.5 Test the Copilot in Microsoft Teams
-As a next step we also want to test the updates in Microsoft Teams.
-Therefore, publish the changes:
- 
-Sometimes it can take a while for the changes to become active in Teams. You can force immediate update by asking for restart or start over:
- 
-Now test again:
- ------ Lets see if we get Teams licenses -------
- 
-## 3.6 Optionally, bypass connection requests in the chat window.
-Only for testing purposes, you may also specifically set the SAP connection as default in the Flow edit pane to avoid any connection requests within Copilot Studio.
- 
+
 # Where to next?
 
 **[🤖 Quest 1](Quest1.md) - [🔧 Quest 3 >](Quest3.md)

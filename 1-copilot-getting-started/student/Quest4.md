@@ -86,7 +86,12 @@ Click on Inputs and verify the correct configuration of the 2 Inputs as follows 
 Go back to the Topic *SAP Product Data*
 ![Select Topic](../images/Quest3/SelectTopic.jpg)
 
-At the end of the flow (after the *Question* step), click on the *+*, select *Add an action*, select the tab *Action (preview)* and select the newly created Action *Update SAP Product Price*
+At the end of the flow (in the *Questions* step), add a last line in the input field:
+````text
+What do you want to change?
+````
+
+After the *Question* step, click on the *+*, select *Add an action*, select the tab *Action (preview)* and select the newly created Action *Update SAP Product Price*
 ![Add new Action](../images/Quest3/AddAction-Action.jpg)
 
 
@@ -116,10 +121,7 @@ Since this is a first time connection, we need to authenticate again. Click on *
 Now do an update...
 
  
-## 4.10 Final test in Teams
- 
- 
- 
+
  
 # Where to next?
 

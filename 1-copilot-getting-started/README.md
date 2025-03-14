@@ -31,10 +31,6 @@ SAP credentials to connect to the SAP system PM0 will be provided later in this 
 * Sign in to Copilot Studio and start free trial here:
 [Copilot Studio](https://copilotstudio.microsoft.com/)
 
-#### 1.2.4. Microsoft Teams
-* Using the browser, launch Microsoft Teams and start trial:
-[Teams](https://teams.microsoft.com/v2/)
-
 > [!Note]
 > If you encounter an error starting the trial, you will need to hit "Retry" button a couple of times.
  
