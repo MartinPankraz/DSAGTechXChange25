@@ -58,7 +58,7 @@ Go back to the Alert list and search for Alert with name 'Critical Function modu
 <img alt="Step 1" src="assets/quest3/3-47.jpg"  width="600">
 </p>
 
-By clicking on the Alert ID yoz can again look into the detauls as well as into the triggering events.
+By clicking on the Alert ID you can again look into the detauls as well as into the triggering events.
 <p align="center" width="100%">
 <img alt="Step 1" src="assets/quest3/3-48.jpg"  width="600">
 </p>
