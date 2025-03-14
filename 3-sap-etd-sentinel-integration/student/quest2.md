@@ -133,7 +133,7 @@ The function Builder opens. Enter BAPI_USER_GET_DETAIL into the field for the fu
 <img alt="Cookie editor" src="assets/quest2/2-01.jpg"  width="600">
 </p>
 
-In the following screen ener the user with User ID USER160, or your own user ID via which you are logged in, and click on Execute.
+In the following screen enter the user with User ID USER160, or your own user ID via which you are logged in, and click on Execute.
 <p align="center" width="100%">
 <img alt="Cookie editor" src="assets/quest2/2-02.jpg"  width="600">
 </p>
