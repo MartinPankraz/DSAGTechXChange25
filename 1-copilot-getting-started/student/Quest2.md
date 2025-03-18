@@ -108,7 +108,6 @@ From the successful run one would normally take out the output body for later us
 ## 3.3 Connect the Copilot with the Flow
 Go back to the Copliot Studio window and click on *Refresh*
 ![Refresh flows](../images/RefreshFlows.jpg)
-![Refresh flows](../images/RefreshFlows.jpg)
 
 > [!Note]
 > If this windows is gone, just click on *Actions* -> *Add Actions* again and search for the flow that you had previously created. 
