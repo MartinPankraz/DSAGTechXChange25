@@ -1,7 +1,7 @@
 # 🤖 2. Challenge 1: Setup Copilot
 [🏠Home](../README.md) - [🔌 Quest 2 >](Quest2.md)
 
-In Challenge 1, you will be setting up a Copilot and connecting it to Microsoft Teams. This involves creating a new Copilot with a specific name, adding a detailed description and instructions that will guide the Copilot's behavior, especially when the Generative AI feature is active.
+In Challenge 1, you will be setting up a Copilot (and connecting it to Microsoft Teams). This involves creating a new Copilot with a specific name, adding a detailed description and instructions that will guide the Copilot's behavior, especially when the Generative AI feature is active.
 
 ## 2.1 Create the Copilot
 Login to Copilot Studio [https://copilotstudio.microsoft.com/](https://copilotstudio.microsoft.com/) witht he provided user, e.g. ```userXXX@bestruncorp.onmicrosoft.com``` where XXX is the number assigned to you. 
