@@ -15,6 +15,8 @@ Click on *New Action* and select *New Power Automate flow*
 
 First thing is to rename your Flow. Click on *Run a flow from Copilot* and provide a new name ````List SAP products of a category````
 ![Rename Flow](../images/RenameFlow.jpg)
+> [!Note]
+>It might be the case that the UI you see looks different compared to the screenshots. In case you want to have the same look and feel, then you can turn off the 'New designer' with the toggle button on the top right.
 
 Select the first step of your flow (e.g. *Skills*) and click on *+ Add an input*. From there select *Text*
 ![Select Text](../images/SelectText.jpg)
