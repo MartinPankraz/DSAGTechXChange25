@@ -47,7 +47,7 @@ In the last action *Respond to Copilot* change the Parameters to ````ProductDeta
 ````text
 Return details for a given product ID
 ````
-and click on the *Flash* icon and add
+and click on the *Power Fx* icon and add
 ````json
 outputs('Query_OData_entities')?['body/data']
 ````
