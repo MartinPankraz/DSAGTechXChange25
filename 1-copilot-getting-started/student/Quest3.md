@@ -118,7 +118,7 @@ In the action, click on *Power Automate inputs (1)* and select the variable *Pro
 Now we need to parse the results of the Power Automate flow. For this click on the *+*, select the *Variable management* and click on *Parse value*
 ![Parse value](../images/Quest3/ParseValue.jpg)
 
-In the *Parse value* section, select the *ProductsForCategory* output
+In the *Parse value* section, select the *ProductDetails* output
 ![Select Output](../images/Quest3/SelectOutpu.jpg)
 
 For *Data type* select *Table*
