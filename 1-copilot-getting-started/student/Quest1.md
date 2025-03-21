@@ -21,6 +21,9 @@ When asked to *Stay signed in* click on *Yes*
 
 ![Stay Signedin](../images/StaySignedIn.jpg)
 
+When asked about your region, select "Germany"
+<<Platzhalter Screenshot>>
+
 Skip the *Welcome to Copilot Studio* screen
 ![Welcome to Copilot Studio](../images/WelcometoCopilotStudio.jpg)
 
