@@ -21,8 +21,11 @@ When asked to *Stay signed in* click on *Yes*
 
 ![Stay Signedin](../images/StaySignedIn.jpg)
 
-When asked about your region, select "Unites States"!
-Platzhalter für den Screenshot
+When asked about your region, select *Unites States*!
+> [!Note]
+> Please keep *United States* here, because it simplifies a common UI for all participants and some features are currently only available in english 
+![Stay Signedin](../images/US-StartNew.jpg)
+
 
 Skip the *Welcome to Copilot Studio* screen
 ![Welcome to Copilot Studio](../images/WelcometoCopilotStudio.jpg)
