@@ -1,4 +1,5 @@
-# Exercise 1: Create the access package for SAP BTP
+# Exercise 1: Testing access to SAP BTP before requesting the access package
+In this first exercise you login with your student's user account to SAP Business Application Studio. As expeczed, access will be denied because your user is not yet assigned to the *SAP BTP Developer* group in Entra.
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
