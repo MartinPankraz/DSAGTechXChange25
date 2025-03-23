@@ -1,0 +1,15 @@
+        ,
+        {
+            "stage": "assignmentRequestApproved",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "<Teams Extension ID>"
+            }
+        },
+        {
+            "stage": "assignmentRequestRemoved",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "<Teams Extension ID>"
+            }
+        }
