@@ -20,7 +20,7 @@ In exercises 1-7 you will implement the following IDM scenario for BestRun Corp.
 
 ## 3. Let's get started!
 > [!IMPORTANT]
-> Choose your user account for the requestor and approver in the scenario. Please follow the instructor's guidance to pick a number from 41 to 70. This ensures that that your work does not interfere with another student's work in the session. So let's say you are assinged to number *50*, please always use the accounts **user50@bestruncorp.onmicrosoft.com* for logging in as the requestor, and *approver50@bestruncorp.onmicrosoft.com* as the approver in the scenario.
+> Choose your user account for the requestor and approver in the scenario. Please follow the instructor's guidance to pick a number from 41 to 70. This ensures that that your work does not interfere with another student's work in the session. Let's say you are assinged to number *50*: Please use the accounts **user50@bestruncorp.onmicrosoft.com* for logging in as the requestor, and *approver50@bestruncorp.onmicrosoft.com* as the approver in the scenario. You will receive the password for the accounts from the instructor.
 
 This hands-on session implements a complete end-to-end IAM workflow scenario with the following exercises:
 1. [Testing access to SAP BTP before requesting the access package](./ex1/ex1.md)
