@@ -22,4 +22,7 @@ In exercises 1-7 you will implement the following IDM scenario for BestRun Corp.
 > [!IMPORTANT]
 > Choose your user account for the requestor and approver in the scenario. Please follow the instructor's guidance to pick a number from 41 to 70. This ensures that that your work does not interfere with another student's work in the session. So let's say you are assinged to number *50*, please always use the accounts **user50@bestruncorp.onmicrosoft.com* for logging in as the requestor, and *approver50@bestruncorp.onmicrosoft.com* as the approver in the scenario.
 
+This hands-on session implements a complete end-to-end IAM workflow scenario with the following exercises:
+1. abc
+
 You have your number assigned? Great, then let's dive into [exercise 1](./ex1/ex1.md).
