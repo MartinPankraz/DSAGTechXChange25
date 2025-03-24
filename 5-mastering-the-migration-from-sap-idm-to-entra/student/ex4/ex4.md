@@ -1,5 +1,6 @@
 # Exercise 4: Test the new dynamic approval workflow
-abc
+You are now ready to test the approval workflow by initiating a new request for the access package. You will also verify the execution of the *DynamicApprover* Logic App and the response from
+the IAM OData service in S/4 HANA by using the available monitoring and troubleshooting tools.  
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
