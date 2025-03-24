@@ -5,7 +5,7 @@ Welcome to the DSAG TechXChange 2025 Hands-on lab. This document provides an ove
 In this hands-on session you will implement a comprehensive solution for providing users with access to sign-in to SAP applications. You'll learn how to integrate Microsoft Entra with SAP Cloud Identity Services and leverage Microsoft Entra's advanced features to migrate and modernize existing SAP IDM workflows, user self-service UIs, integration with SAP data sources, and much more.
 
 ## 2. Scenario overview
-In exercises 1-7 you will implement the following IDM scenario for BestRun Corp., our fictional company in this hands-on session:
+In exercises 1 to 6 (and optionally 7) you will implement the following IDM scenario for BestRun Corp., our fictional company in this hands-on session:
 
 ![scenario](./img/scenario.png)
 
