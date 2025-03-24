@@ -12,3 +12,4 @@ In this first exercise you login with your student's user account to SAP Busines
 | 1.7    |Lorem Ipsum      |<a href="./img/1-7.jpg" target="_blank"><img src="./img/1-7.jpg" width="250"/></a>|
 | 1.8    |Lorem Ipsum      |<a href="./img/1-8.jpg" target="_blank"><img src="./img/1-8.jpg" width="250"/></a>|
 
+Continue with [exercise 2](../ex2/ex2.md).
