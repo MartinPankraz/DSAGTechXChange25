@@ -1,5 +1,6 @@
-# Exercise 6: Test the new dynamic approval workflow
-abc
+# Exercise 6: Test access to SAP Business Application Studio
+Now that the request has been approved, the user is assigned to the resources specified in the access package, i.e. the *SAP BTP Developer* group.
+By accessing SAP Business Application Studio, the user is delegated to the SAP Identity Authentication Service tenant, which proxies the request to the corporate IDP, Microsoft Entra. After successful authentication, Entra emits the user token containing the group membership for *SAP BTP Developer*. The group ID is mapped to the required role in BTP which now permits access. 
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
