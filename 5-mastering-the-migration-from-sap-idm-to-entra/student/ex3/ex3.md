@@ -24,4 +24,4 @@ With the base access package created in the [previous exercise](../ex2/ex2.md), 
 | 3.19   |Lorem Ipsum      |<a href="./img/3-19.jpg" target="_blank"><img src="./img/3-19.jpg" width="250"/></a>|
 | 3.20   |Lorem Ipsum      |<a href="./img/3-20.jpg" target="_blank"><img src="./img/3-20.jpg" width="250"/></a>|
 
-
+Continue with [exercise 4](../ex4/ex4.md).
