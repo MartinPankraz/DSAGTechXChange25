@@ -1,0 +1,149 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity",
+    "displayName": "Dynamic approver",
+    "description": "Dynamic approver",
+    "canExtend": false,
+    "durationInDays": 0,
+    "expirationDateTime": null,
+    "accessPackageId": "<Access Package ID>",
+    "accessReviewSettings": null,
+    "questions": [],
+    "accessPackageNotificationSettings": {
+        "isAssignmentNotificationDisabled": false
+    },
+    "verifiableCredentialSettings": {
+        "credentialTypes": []
+    },
+    "requestorSettings": {
+        "scopeType": "SpecificDirectorySubjects",
+        "acceptRequests": true,
+        "allowedRequestors": [
+          {
+            "@odata.type": "#microsoft.graph.singleUser",
+            "isBackup": false,
+            "id": "<User ID>",
+            "description": "Student user <NN>"
+          }
+        ]
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [
+            {
+                "@odata.type": "#microsoft.graph.accessPackageDynamicApprovalStage",
+                "approvalStageTimeOutInDays": 1,
+                "isApproverJustificationRequired": false,
+                "isEscalationEnabled": false,
+                "escalationTimeInMinutes": 0,
+                "primaryApprovers": [],
+                "escalationApprovers": [],
+                "customExtension": {
+                    "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                    "id": "<Extension ID>",
+                    "displayName": null,
+                    "description": null,
+                    "createdDateTime": null,
+                    "lastModifiedDateTime": null,
+                    "endpointConfiguration": null,
+                    "clientConfiguration": null,
+                    "authenticationConfiguration": null,
+                    "callbackConfiguration": null
+                }
+            }
+        ]
+    },
+    "questions": [
+    {
+      "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+      "id": "ab5e2060-d6d8-4e35-b1e5-303a6be96888",
+      "isRequired": true,
+      "isAnswerEditable": null,
+      "sequence": 0,
+      "allowsMultipleSelection": false,
+      "attribute": null,
+      "text": {
+        "defaultText": "Developer role",
+        "localizedTexts": []
+      },
+      "choices": [        
+        {
+          "actualValue": "SAP BTP",
+          "displayValue": {
+            "defaultText": "SAP BTP",
+            "localizedTexts": [
+              {
+                "text": "SAP BTP",
+                "languageCode": "en-US"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+      "id": "fabd3c22-a350-446a-a4e1-c88e14bfb6e0",
+      "isRequired": true,
+      "isAnswerEditable": null,
+      "sequence": 1,
+      "allowsMultipleSelection": false,
+      "attribute": null,
+      "text": {
+        "defaultText": "Context",
+        "localizedTexts": []
+      },
+      "choices": [
+        {
+          "actualValue": "JAVA",
+          "displayValue": {
+            "defaultText": "JAVA",
+            "localizedTexts": [
+              {
+                "text": "JAVA",
+                "languageCode": "en-US"
+              }
+            ]
+          }
+        },
+        {
+          "actualValue": "SAPUI5",
+          "displayValue": {
+            "defaultText": "SAPUI5",
+            "localizedTexts": [
+              {
+                "text": "SAPUI5",
+                "languageCode": "en-US"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+      "id": "198ad5c5-5bdd-4f1d-a1e9-4a3d28f1562d",
+      "isRequired": true,
+      "isAnswerEditable": true,
+      "sequence": 2,
+      "isSingleLineQuestion": true,
+      "regexPattern": null,
+      "attribute": null,
+      "text": {
+        "defaultText": "Company Code",
+        "localizedTexts": []
+      }
+    }
+  ],    
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestDeterminingApprovalRequirements",
+            "customExtension": {
+            "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+            "id": "<Extension ID>"
+            }
+        }
+    ]
+}
