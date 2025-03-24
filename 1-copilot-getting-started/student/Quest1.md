@@ -21,7 +21,7 @@ When asked to *Stay signed in* click on *Yes*
 
 ![Stay Signedin](../images/StaySignedIn.jpg)
 
-When asked about your region, select *Unites States*!
+When asked about your region, select *Unites States* and click on *Start free trial"
 > [!Note]
 > Please keep *United States* here, because it simplifies a common UI for all participants and some features are currently only available in english 
 ![Stay Signedin](../images/US-StartNew.jpg)
