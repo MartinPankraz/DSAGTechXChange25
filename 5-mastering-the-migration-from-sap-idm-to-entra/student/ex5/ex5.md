@@ -1,5 +1,5 @@
-# Exercise 5: Test the new dynamic approval workflow
-abc
+# Exercise 5: Approve the access package request
+Continue testing the scenario by logging in to the *MyAccess* portal as the approver who was returned by the OData service.
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
