@@ -23,6 +23,12 @@ In exercises 1-7 you will implement the following IDM scenario for BestRun Corp.
 > Choose your user account for the requestor and approver in the scenario. Please follow the instructor's guidance to pick a number from 41 to 70. This ensures that that your work does not interfere with another student's work in the session. So let's say you are assinged to number *50*, please always use the accounts **user50@bestruncorp.onmicrosoft.com* for logging in as the requestor, and *approver50@bestruncorp.onmicrosoft.com* as the approver in the scenario.
 
 This hands-on session implements a complete end-to-end IAM workflow scenario with the following exercises:
-1. abc
+1. [Testing access to SAP BTP before requesting the access package](./ex1/ex1.md)
+1. [Create the access package for SAP BTP Developers in Entra ID Governance](./ex2/ex2.md)
+1. [Configure the access package assignment policy with the Microsoft Graph API](./ex3/ex3.md)
+1. [Test the new dynamic approval workflow](./ex4/ex4.md)
+1. [Approve the access package request](./ex5/ex5.md)
+1. [Test access to SAP Business Application Studio](./ex6/ex6.md)
+1. [(*Optional*) Inform the SOC team via Microsoft Teams](./ex7/ex7.md)
 
 You have your number assigned? Great, then let's dive into [exercise 1](./ex1/ex1.md).
