@@ -1,5 +1,6 @@
-# Exercise 7: abc
-abc
+# Exercise 7 (**optional**): Inform the SOC team via Microsoft Teams
+In this optional exercise, you can further enhance your skills in IAM worklow design with Entra ID Governance. To inform BestRun's Security Operations Center (SOC) team about any changes in priviledged roles such as developer access, a notification to the SOC's channel in Microsoft Teams should be send. 
+You will implement this new workflow requirement with another Logic App that will be called by the correspondog events (access request approved, and access assignment removed).
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
