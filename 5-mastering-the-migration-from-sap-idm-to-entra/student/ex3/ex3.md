@@ -3,14 +3,14 @@ With the base access package created in the [previous exercise](../ex2/ex2.md), 
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
-| 3.1    |Lorem Ipsum      |<a href="./img/3-1.jpg" target="_blank"><img src="./img/3-1.jpg" width="250"/></a>|
-| 3.2    |Lorem Ipsum      |<a href="./img/3-2.jpg" target="_blank"><img src="./img/3-2.jpg" width="250"/></a>|
-| 3.3    |Lorem Ipsum      |<a href="./img/3-3.jpg" target="_blank"><img src="./img/3-3.jpg" width="250"/></a>|
-| 3.4    |Lorem Ipsum      |<a href="./img/3-4.jpg" target="_blank"><img src="./img/3-4.jpg" width="250"/></a>|
-| 3.5    |Lorem Ipsum      |<a href="./img/3-5.jpg" target="_blank"><img src="./img/3-5.jpg" width="250"/></a>|
-| 3.6    |Lorem Ipsum      |<a href="./img/3-6.jpg" target="_blank"><img src="./img/3-6.jpg" width="250"/></a>|
-| 3.7    |Lorem Ipsum      |<a href="./img/3-7.jpg" target="_blank"><img src="./img/3-7.jpg" width="250"/></a>|
-| 3.8    |Lorem Ipsum      |<a href="./img/3-8.jpg" target="_blank"><img src="./img/3-8.jpg" width="250"/></a>|
+| 3.1    |Open a **new browser tab**.<br><br>Go to [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).|<a href="./img/3-1.jpg" target="_blank"><img src="./img/3-1.jpg" width="250"/></a>|
+| 3.2    |Login with your user account.|<a href="./img/3-2.jpg" target="_blank"><img src="./img/3-2.jpg" width="250"/></a>|
+| 3.3    |Select **Next**|<a href="./img/3-3.jpg" target="_blank"><img src="./img/3-3.jpg" width="250"/></a>|
+| 3.4    |Select **Done**|<a href="./img/3-4.jpg" target="_blank"><img src="./img/3-4.jpg" width="250"/></a>|
+| 3.5    |Retrieve your user's data by clicking **Run query** for the Graph URL https://graph.microsoft.com/v1.0/me.|<a href="./img/3-5.jpg" target="_blank"><img src="./img/3-5.jpg" width="250"/></a>|
+| 3.6    |In the **Response preview** tab, mark the value for the *id* element, **right-click**, and select **Copy** from the context menu.|<a href="./img/3-6.jpg" target="_blank"><img src="./img/3-6.jpg" width="250"/></a>|
+| 3.7    |Paste the user id value from the clipboard to your text file, and add a lable to it, e.g. *User ID*.|<a href="./img/3-7.jpg" target="_blank"><img src="./img/3-7.jpg" width="250"/></a>|
+| 3.8    |Copy and paste the following URL into Graph Explorer:<br><br>```https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/<catalog id>/accessPackageCustomWorkflowExtensions```<br><br>Replace the \<catalog_id\> with the value from your text file.|<a href="./img/3-8.jpg" target="_blank"><img src="./img/3-8.jpg" width="250"/></a>|
 | 3.9    |Lorem Ipsum      |<a href="./img/3-9.jpg" target="_blank"><img src="./img/3-9.jpg" width="250"/></a>|
 | 3.10   |Lorem Ipsum      |<a href="./img/3-10.jpg" target="_blank"><img src="./img/3-10.jpg" width="250"/></a>|
 | 3.11   |Lorem Ipsum      |<a href="./img/3-11.jpg" target="_blank"><img src="./img/3-11.jpg" width="250"/></a>|
