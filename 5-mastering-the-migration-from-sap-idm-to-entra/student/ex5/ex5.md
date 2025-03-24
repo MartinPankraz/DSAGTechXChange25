@@ -10,3 +10,5 @@ Continue testing the scenario by logging in to the *MyAccess* portal as the appr
 | 5.5    |Lorem Ipsum      |<a href="./img/5-5.jpg" target="_blank"><img src="./img/5-5.jpg" width="250"/></a>|
 | 5.6    |Lorem Ipsum      |<a href="./img/5-6.jpg" target="_blank"><img src="./img/5-6.jpg" width="250"/></a>|
 | 5.7    |Lorem Ipsum      |<a href="./img/5-7.jpg" target="_blank"><img src="./img/5-7.jpg" width="250"/></a>|
+
+Continue with [exercise 6](../ex6/ex6.md).
