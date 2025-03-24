@@ -36,7 +36,7 @@ You will implement this new workflow requirement with another Logic App that wil
 | 7.30   |Check the HTTP response code is *OK - 200*. The *Dynamic Approver* assignment policy has been updated successfully.|<a href="./img/7-30.jpg" target="_blank"><img src="./img/7-30.jpg" width="250"/></a>|
 | 7.31   |Switch to the first browser tab. Select **Student\<NN\> \| Custom Extensions** from the breadcrumb navigation.|<a href="./img/7-31.jpg" target="_blank"><img src="./img/7-31.jpg" width="250"/></a>|
 | 7.32   |Select **Access packages** from the navigation menu. Select the **BTP Student \<NN\>** package from the list.|<a href="./img/7-32.jpg" target="_blank"><img src="./img/7-32.jpg" width="250"/></a>|
-| 7.33   |Lorem Ipsum      |<a href="./img/7-33.jpg" target="_blank"><img src="./img/7-33.jpg" width="250"/></a>|
-| 7.34   |Lorem Ipsum      |<a href="./img/7-34.jpg" target="_blank"><img src="./img/7-34.jpg" width="250"/></a>|
-| 7.35   |Lorem Ipsum      |<a href="./img/7-35.jpg" target="_blank"><img src="./img/7-35.jpg" width="250"/></a>|
-| 7.36   |Lorem Ipsum      |<a href="./img/7-36.jpg" target="_blank"><img src="./img/7-36.jpg" width="250"/></a>|
+| 7.33   |Select **Assignments** from the navigation menu.<br><br>Activate the checkbox for the existing assignment to your *Student user \<NN\>*.<br><br>Click **Remove**. This will trigger the new logic app to send a notification into the SOC team's event channel.|<a href="./img/7-33.jpg" target="_blank"><img src="./img/7-33.jpg" width="250"/></a>|
+| 7.34   |Verify that the event information has been sent. Login to [Microsoft Teams}(https://teams.microsoft.com/) with user *sapsentinel@bestruncorp.onmicrosoft.com*.<br><br>Click **Next**.|<a href="./img/7-34.jpg" target="_blank"><img src="./img/7-34.jpg" width="250"/></a>|
+| 7.35   |Click **Skip setup**.|<a href="./img/7-35.jpg" target="_blank"><img src="./img/7-35.jpg" width="250"/></a>|
+| 7.36   |In Microsoft Teams, switch to **Teams** on the left-side navigation. Expand the *bestruncorp* team, and select the **SAP IAM Events** channel from it.<br><br>Verify that the adaptive card has been sent by your new custom extension and informs about the removal of the assignment.|<a href="./img/7-36.jpg" target="_blank"><img src="./img/7-36.jpg" width="250"/></a>|
