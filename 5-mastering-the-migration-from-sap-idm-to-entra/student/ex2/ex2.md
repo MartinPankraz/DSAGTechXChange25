@@ -30,3 +30,5 @@ The steps in this exercise will only create the basic setup. In the next [exerci
 | 2.24    |Lorem Ipsum      |<a href="./img/2-24.jpg" target="_blank"><img src="./img/2-24.jpg" width="250"/></a>|
 | 2.25    |Lorem Ipsum      |<a href="./img/2-25.jpg" target="_blank"><img src="./img/2-25.jpg" width="250"/></a>|
 | 2.26    |Lorem Ipsum      |<a href="./img/2-26.jpg" target="_blank"><img src="./img/2-26.jpg" width="250"/></a>|
+
+Continue with [exercise 3](../ex3/ex3.md).
