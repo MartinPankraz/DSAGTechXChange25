@@ -22,7 +22,7 @@ In this lab, you will develop a solution to help employees easily access product
 SAP credentials to connect to the SAP system PM0 will be provided later in this guide when you need to create a connection.
 
 > [!Tip] 
-> If you run through this guide after the TechXChange event, you can also leverage the public [SAP Gateway Demo System](https://developers.sap.com/tutorials/gateway-demo-signup..html) 
+> If you run through this guide after the TechXChange event, you can also leverage the public [SAP Gateway Demo System](https://developers.sap.com/tutorials/gateway-demo-signup.html) 
 
 #### 1.2.2. Locate Entra-ID / Active Directory credentials
 * Locate Entra-ID / Active Directory credentials provided in the resources section of this guide. You will need these to sign into Copilot Studio, Power Platform and Microsoft Teams.
