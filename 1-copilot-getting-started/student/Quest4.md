@@ -100,6 +100,9 @@ In the plugin action you don’t need to provide an input because Gen AI will au
 Save and publish.
 ![Add new Action](../images/Quest3/ClickSaveAndPublish.jpg)
 
+> [!Note]
+> Don't be confused if it says that the input field must be filled. Just click on Save
+
 ## 5.4 Test the price update in Copilot Studio
 As before start asking Copilot about notebooks
 ````text
