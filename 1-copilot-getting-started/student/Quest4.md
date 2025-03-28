@@ -1,7 +1,7 @@
 # 🔧 4. Challenge 4: Change data in SAP
 [< 🔌 Quest 3](Quest3.md) 
 ## Option: Updating prices
-After displaying the information of a specific product in Copilot Studio, we now want to enhance the flow and add the functionality to update a proprties. In the interest of time, we will only do the update for the product price, but obviously this could be done for all other properites as well. 
+After displaying the information of a specific product in Copilot Studio, we now want to enhance the flow and add the functionality to update a proprty. In the interest of time, we will only do the update for the product price, but obviously this could be done for all other properites as well. 
 
 
 ### 5.1 Create flow Update SAP Product Price
@@ -114,14 +114,15 @@ show me details for HT-8003
 ````
 ![Add new Action](../images/Quest3/ShowDetailsAndConnect.jpg)
 
+Now do an update...
+````text
+Please update the price to 10 USD
+````
+<!-- 'XX USD' will cause responsible AI to reject query. -->
+
 Since this is a first time connection, we need to authenticate again. Click on *Connect* and for all *Not connected* connections
 ![Add new Action](../images/Quest3/Connect.jpg)
 
-
-Now do an update...
-````text
-Please update the price to XX USD
-````
 
 > [!Note]
 > You can open a new browser tab and query the product to check whether the price has been updated by querying the Odata service. Use following URL: https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet('HT-8003') 

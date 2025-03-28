@@ -15,21 +15,31 @@ Click on *New Action* and select *New Power Automate flow*
 
 First thing is to rename your Flow. Click on *Run a flow from Copilot* and provide a new name ````List SAP products of a category````
 ![Rename Flow](../images/RenameFlow.jpg)
-> [!Note]
->It might be the case that the UI you see looks different compared to the screenshots. In case you want to have the same look and feel, then you can turn off the 'New designer' with the toggle button on the top right.
 
-Select the first step of your flow (e.g. *Skills*) and click on *+ Add an input*. From there select *Text*
-![Select Text](../images/SelectText.jpg)
+<!-- > [!Note]
+>It might be the case that the UI you see looks different compared to the screenshots. In case you want to have the same look and feel, then you can turn off the 'New designer' with the toggle button on the top right. -->
+
+[!Note]
+> Make sure that the **New designer** experience is enabled in your user session.
+> ![Enable New Designer Experience](../images/NewDesignerExperience_3.png)
+
+Select the first step of your flow (*Run a flow from Copilot*) and click on *+ Add an input*. From there select *Text*
+<!-- ![Select Text](../images/SelectText.jpg) -->
+![Select Text 1](../images/SelectText_3.png)
+![Select Text 2](../images/SelectText_3-b.png)
 
 Now provide a variable name for this input field ````Category```` 
-![Input Cateogry](../images/InputCategory.jpg)
+<!-- ![Input Cateogry](../images/InputCategory.jpg) -->
+![Input Category](../images/InputCategory_3.png)
 
 Now that we will get a Category from as an input we can call the SAP OData Service. Click on the *+* sign between the *Skills* and the *Respond to Copilot* actions and select *Add an action*
-![Add Action](../images/AddAction.jpg)
+<!-- ![Add Action](../images/AddAction.jpg) -->
+![Add Action](../images/AddAction_3.png)
 
 
 Search for SAP OData and select the *Query OData entities*  
-![Select Query OData Entity](../images/QueryODataEntity.jpg)
+<!-- ![Select Query OData Entity](../images/QueryODataEntity.jpg) -->
+![Select Query OData Entity](../images/QueryODataEntity_3.png)
 
  
 Provide the following properties:
@@ -78,10 +88,11 @@ For the *Enter a description of the output* enter
 ````text
 Products found in SAP of a given category. Present the result as HTML table including following information: ProductID; Name; Category; Description; Supplier; Price; Currency.
 ````
-![Enter Description](../images/DescriptionAndTest.jpg)
+<!-- ![](../images/DescriptionAndTest.jpg) -->
+![Enter Description](../images/Description_3.png)
 
-
-Now save can Save / Publish your Power Automate Flow.
+Now publish your flow before we head over to the first test.
+![Publish Flow](../images/PublishFlow_3.png)
 
 
 ## 3.2 Test the flow
@@ -97,10 +108,17 @@ For the *Category* enter product ID ````Keyboards````  and click on *Run flow*
 > If you are seeing an error like this, just click on *Return to classic designer* and run the test again. 
 > 
 > ![Return to classic Designer](../images/ReturnToClassicDesigner.jpg)
-  
- 
+
+
+Track the flow execution by going to the ````Flows Runs Page````
+![Flows Runs Page](../images/FlowsRunsPage_3.png)
+
+and then browse to your most recent flow exection by clicking the first link.
+![Flow Execution](../images/FlowExecution_3.png)
+
 From the successful run one would normally take out the output body for later use in the copilot studio as input schema for the JSON parsing. In this lab, however, we provide the schema directly to save some time.
-![Results from SAP](../images/ResultFromSAP.jpg)
+<!-- ![Results from SAP](../images/ResultFromSAP.jpg) -->
+![Results from SAP](../images/ResultFromSAP_2.png)
 
 > [!Important]
 > Make sure to doublecheck that you renamed the flow to *List SAP products of a category*
@@ -129,7 +147,7 @@ and click on *Inputs*
 ![Enter Description](../images/EnterDescription.jpg)
 
 
-Under the *Inputs* tabe, add the following text into the Description box so that Gen AI knows how to set the input for the flow:
+Under the *Inputs* tab, add the following text into the Description box so that Gen AI knows how to set the input for the flow:
 
 ````text
 Product Category. Only one single category can be chosen as input from this list. It is case-sensitive and must be written exactly like below: Accessories, Notebooks, Laser Printers, Mice, Keyboards, Mousepads, Scanners, Speakers, Headsets, Software, PCs, Smartphones, Tablets, Servers, Projectors, MP3 Players, Camcorders
