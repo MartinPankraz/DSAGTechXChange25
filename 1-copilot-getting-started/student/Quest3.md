@@ -61,13 +61,12 @@ Now go back to the [Copilot Studio window ](https://copilotstudio.preview.micros
 ![Topics](../images/Quest3/Topics.jpg)
 
 
-In the section *Describe what the topic does* enter the following:
+In the section *Describe what the topic does* enter the following and *Save the Topic*
 
 ````text 
 This topic will fetch details of a product in SAP and allows the user to update SAP product information.
 Typical queries are like these:
 Update / change or edit product price in SAP.
-Save the Topic
 ````
 ![Change Triger Description](../images/Quest3/ChangeTriggerDescription.jpg)
 
