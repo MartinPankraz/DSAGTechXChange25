@@ -1,1 +1,206 @@
-Add trigger, upload knowledge and respond to FAQ question
+# 🔌 Challenge 2: Setup Flow + SAP OData Connector
+[< 🤖 Quest 1](Quest1.md) - **[🔧 Quest 3 >](Quest3.md)**
+
+In Challenge 2, we will make your agent autonomous and add some knowledge in the form of an FAQ documents to your agent.
+
+## 2.1 Ask a Question
+For all the DSAG participants we will provide a Power App to enter Demo Questions which should eventually trigger our Agent. You can find the [Demo Questions App here](https://org9b8075dc.crm4.dynamics.com/main.aspx?appid=ebcffe1d-a308-f011-bae3-7c1e52fba45f). Please use the provided credentials for your M365 user if prompted to log in.
+For this tutorial we don't care where the question actually came from, but the Power Platform also has fantastic capabilities to build a small ticket system and [connect a shared Outlook mailbox](https://learn.microsoft.com/en-us/power-platform/admin/connect-exchange-online).
+
+>[!Note]
+> If you do this on your own, either create a SharePoint-list similiar to our app you can use as a trigger. If you already have Power Apps experience you can also build a small Model-Driven App like the one I'll show in the screenshots.
+
+The App provides a view of your Demo Questions with the newest ones on top. All students will enter the questions in the same table, but a security role will make sure everyone only has access to their own questions.
+
+![Demo Questions](../images/2_DemoQuestions.png)
+
+On the top bar you can select **New** which will allow you to ask a new Question.
+
+![New Question](../images/2_NewQuestion.png)
+
+Enter a new Title and Question everytime you want to test the agent. Our goal for this workshop is, that the agent autonomously sets the **Status Reason** of the question and drafts a **Response** for us.
+
+## 2.2 Add the Trigger
+Head back to your agent, locate the **Triggers** section and select **+ Add trigger**.
+
+![Add Trigger](../images/2_AddTrigger.png)
+
+We will use the *When a row is added, modified or deleted* trigger from Microsoft Dataverse
+
+![DataverseTrigger](../images/2_DataverseTrigger.png)
+
+Rename it to `A new question was created` and hit **Next**.
+
+Provide the following properties:
+|Name|Value|
+|----|-----|
+|Change type|Added|
+|Table name|Demo Questions|
+|Scope|User|
+
+Select **Create Trigger**
+
+![ConfigureTrigger](../images/2_ConfigureTrigger.png)
+
+We will configure the trigger a little further directly in Power Automate. Select the three dots next to your newly created trigger and select **Edit in Power Automate**.
+![Trigger Automate](../images/2_EditPowerAutomate.png)
+
+
+
+Click on *New Action* and select *New Power Automate flow*
+![Create new Flow](../images/NewPowerAutomateFlow.jpg)
+ 
+> [!Note]
+> If you are getting the pop-up to provide *More Information* click on *Next* and *Skip Setup* like in the previous Quest. 
+
+First thing is to rename your Flow. Click on *Run a flow from Copilot* and provide a new name ````List SAP products of a category````
+![Rename Flow](../images/RenameFlow.jpg)
+> [!Note]
+>It might be the case that the UI you see looks different compared to the screenshots. In case you want to have the same look and feel, then you can turn off the 'New designer' with the toggle button on the top right.
+
+Select the first step of your flow (e.g. *Skills*) and click on *+ Add an input*. From there select *Text*
+![Select Text](../images/SelectText.jpg)
+
+Now provide a variable name for this input field ````Category```` 
+![Input Cateogry](../images/InputCategory.jpg)
+
+Now that we will get a Category from as an input we can call the SAP OData Service. Click on the *+* sign between the *Skills* and the *Respond to Copilot* actions and select *Add an action*
+![Add Action](../images/AddAction.jpg)
+
+
+Search for SAP OData and select the *Query OData entities*  
+![Select Query OData Entity](../images/QueryODataEntity.jpg)
+
+ 
+Provide the following properties:
+|Name|Value|
+|----|-----|
+|Connection name|PM0-100-GWSAMPLE|
+|OData Base URI|https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100|
+|Username|userXXX|
+|Password|\<as provided\>|
+
+![Create new connection](../images/CreateNewConnection.jpg)
+
+> [!Note]
+> If you are using SAP's Public Demo system *ES5*, then OData Base URI: https://sapes5.sapdevcenter.com/sap/opu/odata/iwbep/GWSAMPLE_BASIC
+
+
+From the *OData Entity name* drop down select *ProductSet*
+![Select Sroduct Set](../images/SelectProductSet.jpg)
+
+
+
+Click *Show all* and select Power FX icon from the $filter to enter a query:
+![Select Power FX](../images/SelectPowerFX.jpg)
+
+Add this expression: 
+````text
+concat('Category eq ', '''', triggerBody()['text'], '''')
+````
+and click on *Add*
+![Add Power FX](../images/AddPowerFX.jpg)
+ 
+
+The final action *Respond to Copilot* will return the list of products from SAP. Select the *Respond to Copilot* action and then *+Add an output* on the left hand side 
+![Add an Output](../images/AddAnOutpu.jpg)
+
+As before select *Text* 
+![Select Text](../images/SelectText2.jpg)
+ 
+Provide a name for this new parameter, e.g. ````ProductsForCategory```` and click on the *Enter a value to respond with* field to be able to select the flash sign:
+![Select Variables](../images/SelectVariables.jpg)
+
+From the list of properties select *Body* from *Query OData entities*
+![Select Body](../images/SelectBody.jpg)
+
+For the *Enter a description of the output* enter 
+````text
+Products found in SAP of a given category. Present the result as HTML table including following information: ProductID; Name; Category; Description; Supplier; Price; Currency.
+````
+![Enter Description](../images/DescriptionAndTest.jpg)
+
+
+Now save can Save / Publish your Power Automate Flow.
+
+
+## 3.2 Test the flow
+To test the Flow, click on Test. Choose Manually and select *Publish & Test* 
+![Publish and Test](../images/PublishAndTest.jpg)
+
+
+For the *Category* enter product ID ````Keyboards````  and click on *Run flow*
+![Run Flow](../images/RunFlow.jpg)
+
+
+> [!Note]
+> If you are seeing an error like this, just click on *Return to classic designer* and run the test again. 
+> 
+> ![Return to classic Designer](../images/ReturnToClassicDesigner.jpg)
+  
+ 
+From the successful run one would normally take out the output body for later use in the copilot studio as input schema for the JSON parsing. In this lab, however, we provide the schema directly to save some time.
+![Results from SAP](../images/ResultFromSAP.jpg)
+
+> [!Important]
+> Make sure to doublecheck that you renamed the flow to *List SAP products of a category*
+ 
+## 3.3 Connect the Copilot with the Flow
+Go back to the Copliot Studio window and click on *Refresh*
+![Refresh flows](../images/RefreshFlows.jpg)
+
+> [!Note]
+> If this windows is gone, just click on *Actions* -> *Add Actions* again and search for the flow that you had previously created. 
+ 
+Chose the previously created Flow *List SAP products of a category*
+![Select flows](../images/SelectFlow.jpg)
+
+For now just click on *Add action*
+![Add Action](../images/AddActionInCopilotStudio.jpg)
+
+Under Actions you should now see the Action that was just created. Click on it.
+![Click on Action](../images/ClickOnAction.jpg)
+
+Enter the *Description for the agent to know when to use this action* 
+````text
+This agents returns a list of products in a given category. 
+````
+and click on *Inputs*
+![Enter Description](../images/EnterDescription.jpg)
+
+
+Under the *Inputs* tabe, add the following text into the Description box so that Gen AI knows how to set the input for the flow:
+
+````text
+Product Category. Only one single category can be chosen as input from this list. It is case-sensitive and must be written exactly like below: Accessories, Notebooks, Laser Printers, Mice, Keyboards, Mousepads, Scanners, Speakers, Headsets, Software, PCs, Smartphones, Tablets, Servers, Projectors, MP3 Players, Camcorders
+```` 
+![Enter Input Description](../images/EnterInputDescription.jpg)
+
+
+Now Save your agent.
+
+## 3.4 Test the Copilot in the test pane
+Open the Test pane and give it a try by asking: 
+````text
+show me keyboards in the system
+````
+
+For the first test you need to connect with the SAP OData Connector. Click on *Connect*
+![Test and Connect](../images/TestAndConnect.jpg)
+
+Click on *Connect*
+![Connect](../images/Connect.jpg)
+
+And *Submit*
+![Submit](../images/ConnectSubmit.jpg)
+
+Go back to the Copilot Studio tab and click on Retry. As a result you should see an HTML table with Keyboards from the SAP system. 
+![Retry Connection](../images/RetryConnection.jpg)
+
+
+
+# Where to next?
+
+**[🤖 Quest 1](Quest1.md) - [🔧 Quest 3 >](Quest3.md)
+
+[🔝](#)

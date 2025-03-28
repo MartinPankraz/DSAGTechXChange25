@@ -3,7 +3,7 @@ In this first exercise you login with your student's user account to SAP Busines
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
-| 1.1    |Open a new web browser window and go to the [SAP Business Application Studio](https://4478e7a5trial.ap21cf.trial.applicationstudio.cloud.sap/). SAP IAS proxies the login request to Microsoft Entra, where you login with user\<41..80\>@bestruncorp.onmicrosoft.com.      |<a href="./img/1-1.jpg" target="_blank"><img src="./img/1-1.jpg" width="250"/></a>|
+| 1.1    |Start a new web browser window and open **SAP Business Application Studio** at ```https://4478e7a5trial.ap21cf.trial.applicationstudio.cloud.sap/```.<br><br>SAP IAS proxies the login request to Microsoft Entra, where you login with user\<41..80\>@bestruncorp.onmicrosoft.com.      |<a href="./img/1-1.jpg" target="_blank"><img src="./img/1-1.jpg" width="250"/></a>|
 | 1.2    |Enter the password and click **Sign-in**.|<a href="./img/1-2.jpg" target="_blank"><img src="./img/1-2.jpg" width="250"/></a>|
 | 1.3    |Click **Next**.|<a href="./img/1-3.jpg" target="_blank"><img src="./img/1-3.jpg" width="250"/></a>|
 | 1.4    |Click **Done**.|<a href="./img/1-4.jpg" target="_blank"><img src="./img/1-4.jpg" width="250"/></a>|
