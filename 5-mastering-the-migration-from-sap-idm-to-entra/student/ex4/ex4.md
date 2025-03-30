@@ -2,6 +2,8 @@
 You are now ready to test the approval workflow by initiating a new request for the access package. You will also verify the execution of the *DynamicApprover* Logic App and the response from
 the IAM OData service in S/4 HANA by using the available monitoring and troubleshooting tools.  
 
+**Duration:** 10 minutes.
+
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
 | 4.1    |Select **Overview** from the navigation menu.<br><br>Click **Copy to clipboard** for the *My Access portal link*.|<a href="./img/4-1.jpg" target="_blank"><img src="./img/4-1.jpg" width="250"/></a>|

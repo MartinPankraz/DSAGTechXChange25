@@ -1,10 +1,11 @@
 # Exercise 2: Create the access package for SAP BTP Developers in Entra ID Governance
-To request assignment to the *SAP BTP Developer* group, an access package is created in this exercise. You will use the Microsoft Entra admin center for this task.
-The steps in this exercise will only create the basic setup. In the next [exercise](../ex3/ex3.md), you will use the Microsoft Graph API to configure further settings on the access package, such as the approval workflow for the scenario. 
+To request assignment to the *SAP BTP Developer* group, an access package is created in this exercise. You will use the Microsoft Entra admin center with a preview feature flag enabled to configure the access package for this scenario. The steps in this exercise will only create the basic setup. In the next [exercise](../ex3/ex3.md), you will use the Microsoft Graph API to configure further settings on the access package, such as the approval workflow for the scenario. 
+
+**Duration:** 10 minutes.
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
-| 2.1    |Sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) with your user user\<41..70\> @bestruncorp.onmicrosoft.com. |<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
+| 2.1    |Sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) with your user user\<41..70\>@bestruncorp.onmicrosoft.com. |<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
 | 2.2    |Click **Next**.|<a href="./img/2-2.jpg" target="_blank"><img src="./img/2-2.jpg" width="250"/></a>|
 | 2.3    |Confirm with **Done**.|<a href="./img/2-3.jpg" target="_blank"><img src="./img/2-3.jpg" width="250"/></a>|
 | 2.4    |Select **Catalogs** from the navigation menu. In the search bar, enter your *Student*-number. Select the catalog **Student\<41..80\>** with the number assigned to you from the list.|<a href="./img/2-4.jpg" target="_blank"><img src="./img/2-4.jpg" width="250"/></a>|
@@ -14,7 +15,7 @@ The steps in this exercise will only create the basic setup. In the next [exerci
 | 2.8    |On the first page **Basics** of the wizard, provide a name (*DynamicApprover*) and description.<br><br>Click **Next: Extension Type**.|<a href="./img/2-8.jpg" target="_blank"><img src="./img/2-8.jpg" width="250"/></a>|
 | 2.9    |Keep the default selection and click **Next: Extension Configuration**.|<a href="./img/2-9.jpg" target="_blank"><img src="./img/2-9.jpg" width="250"/></a>|
 | 2.10   |Select **Launch and wait** for the *Behaviour* of the new extension, and **Approval Stage (Preview)** for the *Response data*. Keep the expiration to 5 minutes.<br><br>Click **Next: Details**.|<a href="./img/2-10.jpg" target="_blank"><img src="./img/2-10.jpg" width="250"/></a>|
-| 2.11   |Select **No** for the switch to *Create a logic app*. You will use an existing app already deployed to the Entra tenant. Select *Visual Studio Enterprise Abonnement* for the **Subscription**, *SAPEntra-RG* for the **Resource Group**, and *DynamicApprover* for the **Logic App**.<br><br>Click **Next:Review + create**.|<a href="./img/2-11.jpg" target="_blank"><img src="./img/2-11.jpg" width="250"/></a>|
+| 2.11   |Select **No** for the switch to *Create a logic app*. You will use an existing logic app already deployed to the Entra tenant as follows:<br><br>**Subscription**: *Visual Studio Enterprise Abonnement*<br><br>**Resource Group**: *SAPEntra-RG*<br><br>**Logic App**: *DynamicApprover*<br><br>Click **Next:Review + create**.|<a href="./img/2-11.jpg" target="_blank"><img src="./img/2-11.jpg" width="250"/></a>|
 | 2.12   |Click **Create**.|<a href="./img/2-12.jpg" target="_blank"><img src="./img/2-12.jpg" width="250"/></a>|
 | 2.13   |Go to **Roles and administrators**.<br><br>Click **+ Add access package assignment manager**.|<a href="./img/2-13.jpg" target="_blank"><img src="./img/2-13.jpg" width="250"/></a>|
 | 2.14   |In the search bar, enter *DynamicApprover**. Switch to the **Enterprise applications** tab and activate the checkbox for the DynamicApprover enterprise app in the search results.<br><br>Click **Select**.|<a href="./img/2-14.jpg" target="_blank"><img src="./img/2-14.jpg" width="250"/></a>|
@@ -23,7 +24,7 @@ The steps in this exercise will only create the basic setup. In the next [exerci
 | 2.17   |Under **Resource roles**, click **+ Groups and Teams**.|<a href="./img/2-17.jpg" target="_blank"><img src="./img/2-17.jpg" width="250"/></a>|
 | 2.18   |Activate the **checkbox** to *see all groups*. Enter *SAP BTP* in the search field.<br><br>Activate the **checkbox** for the *SAP BTP Developer* group.<br><br>Click **Select**.|<a href="./img/2-18.jpg" target="_blank"><img src="./img/2-18.jpg" width="250"/></a>|
 | 2.19   |From the **Role** drop-down list, select *Member*.<br><br>Click **Next: Requests**|<a href="./img/2-19.jpg" target="_blank"><img src="./img/2-19.jpg" width="250"/></a>|
-| 2.20   |For now, select **None (administrator direct assignments only)** as the *Users who can request access*. This will be changed in the next exercise. Turn **Require approval**, **Disable assignment emails**, and **Enable new requests** to *No*.<br><br>Click **Next: Requestor Information**.|<a href="./img/2-20.jpg" target="_blank"><img src="./img/2-20.jpg" width="250"/></a>|
+| 2.20   |For now, select **None (administrator direct assignments only)** as the *Users who can request access*. This will be changed in the next exercise.<br><br>Switch to *No* for **Disable assignment emails** and **Enable new requests**.<br><br>Click **Next: Requestor Information**.|<a href="./img/2-20.jpg" target="_blank"><img src="./img/2-20.jpg" width="250"/></a>|
 | 2.21   |Again, the details on questions and input required by the user requesting the package will be configured in the next exercise.<br><br>Click **Next: Lifecycle**.|<a href="./img/2-21.jpg" target="_blank"><img src="./img/2-21.jpg" width="250"/></a>|
 | 2.22   |Set the **Require access reviews** to *No*.<br><br>Click **Next: Rules**.|<a href="./img/2-22.jpg" target="_blank"><img src="./img/2-22.jpg" width="250"/></a>|
 | 2.23   |Click **Next: Review + create**.|<a href="./img/2-23.jpg" target="_blank"><img src="./img/2-23.jpg" width="250"/></a>|

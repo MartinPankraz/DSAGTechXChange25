@@ -21,7 +21,7 @@ When asked to *Stay signed in* click on *Yes*
 
 ![Stay Signedin](../images/StaySignedIn.jpg)
 
-When asked about your region, select *Unites States* and click on *Start free trial"
+When asked about your region, select *United States* and click on *Start free trial"
 > [!Note]
 > Please keep *United States* here, because it simplifies a common UI for all participants and some features are currently only available in english 
 ![Stay Signedin](../images/US-StartNew.jpg)
@@ -34,22 +34,31 @@ and click on Create to Create your first *Copilot Studio Agent*
 ![Create Agent](../images/CreateAgent.jpg)
 
 Click on *New agent*
-![New Agent](../images/NewAgent.jpg)
+![New Agent](../images/NewAgent_3.png)
+<!-- ![New Agent](../images/NewAgent.jpg) -->
 
-and create a Copilot with the name SAP Product Copilot
- 
+skip the chatbot and click *Skip to configure* in the upper right corner
 
-Provide a **Name**: ```SAP Product Copilot```
+![Skip to configure](../images/SkipToConfigure_3.png)
 
-**Description**: 
-```text 
-This Copilot Agent enables users to lookup information about Products in the SAP System
-````
+then create a Copilot with the name SAP Product Copilot.
 
-and **Instructions**. The instructions are important as they influence the behavior of the copilot when Generative AI feature is active:
-````text
-You are a copilot that checks available products in a SAP system. You provide the product details as a HTML table for better readability.
-````
+Provide following properties:
+
+- **Name**: 
+  ````text
+  SAP Product Copilot
+  ````
+
+- **Description**: 
+  ````text
+   This Copilot Agent enables users to lookup information about Products in the SAP System
+  ````
+
+- **Instructions**. The instructions are important as they influence the behavior of the copilot when Generative AI feature is active:
+  ````text
+  You are a copilot that checks available products in a SAP system. You provide the product details as a HTML table for better readability.
+  ````
 
 Then click on **Create**
 ![New Agent](../images/CreateSAPProductCopilot.jpg)
@@ -61,12 +70,12 @@ Then click on **Create**
 Now that the *Copilot Studio Agent* is created, open the Settings
 ![Open Settings](../images/OpenSettings.jpg)
 
-Select *Generate AI* on the left, then *Generative (preview)* and click on *Save*
+Select *Generate AI* on the left, then *Generative* and click on *Save*
 ![Enable Generative AI](../images/EnableGenAi.jpg)
 
 
-## 2.3. Ask a first questions
-Now *Close* the Settings screen and use the *Test your agent* to interact with your new Agent. 
+## 2.3. Have a first chat with your bot
+Now *Close* the Settings screen and use the *Test your agent* on the right side of the screen to interact with your new Agent. (A simple 'Hi' will do for the moment.)
 ![First Questions](../images/FirstQuestion.jpg)
 
 >[!Note]

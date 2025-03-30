@@ -55,6 +55,10 @@ cd .\Desktop\sap-hacker-in-a-day\docker-kali\
 
 > [!NOTE]
 > You need to be in the same folder as the first session - run above `cd` command again to be sure! In case of port binding issues adjust the incoming port in the command below.
+> 
+> When the image can't be pulled edit `/etc/containers/registries.conf`
+> And update `unqualified-search-registries = ["docker.io"]`
+
 
 ```bash
 podman build -t my-evilginx-kali:latest .

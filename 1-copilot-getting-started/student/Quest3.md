@@ -1,14 +1,14 @@
 # 🔧 4. Challenge 3: Display data in SAP
 [< 🔌 Quest 2](Quest2.md) - **[Quest 4 >](Quest4.md)**
 
-In this challenge you will learn how to:
+In this challenge you will learn:
 * The difference between Actions and Topics.
-* Create a topic to handle more complex tasks like updating data in SAP.
+* How to create a topic to handle more complex tasks like updating data in SAP.
 * How topics will be activated with the right trigger phrases.
-* Call flows from topics.
-* Use other entities of the SAP OData Connector
-* Handle special situations (e.g. no product found)
-* Parse JSON and assign values to topics variables
+* How to call flows from topics.
+* How to use other entities of the SAP OData Connector
+* How to handle special situations (e.g. no product found)
+* How to parse JSON and assign values to topics variables
 
 For the sake of time and simplicity, we keep the hand-on session simple and only provide the possibility to update the price.
 
@@ -57,17 +57,16 @@ Then click on *Publish* to save and Publish the flow.
 
 
 ### 4.2 Create a Topic “SAP Product Data”
-Now go back to the [Copilot Studio window ](https://copilotstudio.preview.microsoft.com/) and click on *Topics* From there click on *+ Add a topic* -> *From blank*
+Now go back to the [Copilot Studio window ](https://copilotstudio.preview.microsoft.com/), select your ````SAP Product Copilot```` agent and click on *Topics* From there click on *+ Add a topic* -> *From blank*
 ![Topics](../images/Quest3/Topics.jpg)
 
 
-In the section *Describe what the topic does* enter the following:
+In the section *Describe what the topic does* enter the following and *Save the Topic*
 
 ````text 
 This topic will fetch details of a product in SAP and allows the user to update SAP product information.
 Typical queries are like these:
 Update / change or edit product price in SAP.
-Save the Topic
 ````
 ![Change Triger Description](../images/Quest3/ChangeTriggerDescription.jpg)
 
@@ -119,7 +118,8 @@ Now we need to parse the results of the Power Automate flow. For this click on t
 ![Parse value](../images/Quest3/ParseValue.jpg)
 
 In the *Parse value* section, select the *ProductDetails* output
-![Select Output](../images/Quest3/SelectOutpu.jpg)
+<!-- ![Select Output](../images/Quest3/SelectOutpu.jpg) -->
+![Select Output](../images/Quest3/SelectOutput_3.png)
 
 For *Data type* select *Table*
 ![Select Table](../images/Quest3/SelectTabel.jpg)
@@ -203,7 +203,7 @@ In order to save time, use the code editor to enter the formulas to show the pro
 ![Open Code editor](../images/Quest3/OpenCodeEditor.jpg)
 
  
-In the code editor, search for the text Placeholder, we'll add details via code editor. 
+In the code editor, search for the text ````Placeholder, we'll add details via code editor````. 
 ![Search Placeholder](../images/Quest3/SearchPlaceholder.jpg)
 
  Replace the selected text with this block of text:
