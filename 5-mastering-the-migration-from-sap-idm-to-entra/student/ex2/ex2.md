@@ -1,6 +1,8 @@
 # Exercise 2: Create the access package for SAP BTP Developers in Entra ID Governance
 To request assignment to the *SAP BTP Developer* group, an access package is created in this exercise. You will use the Microsoft Entra admin center with a preview feature flag enabled to configure the access package for this scenario. The steps in this exercise will only create the basic setup. In the next [exercise](../ex3/ex3.md), you will use the Microsoft Graph API to configure further settings on the access package, such as the approval workflow for the scenario. 
 
+**Duration:** 10 minutes.
+
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
 | 2.1    |Sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) with your user user\<41..70\>@bestruncorp.onmicrosoft.com. |<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
