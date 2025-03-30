@@ -1,6 +1,8 @@
 # Exercise 5: Approve the access package request
 Continue testing the scenario by logging in to the *MyAccess* portal as the approver who was returned by the OData service.
 
+**Duration:** 5 minutes.
+
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
 | 5.1    |Open your user login and select **Sign in with a different account**.|<a href="./img/5-1.jpg" target="_blank"><img src="./img/5-1.jpg" width="250"/></a>|
