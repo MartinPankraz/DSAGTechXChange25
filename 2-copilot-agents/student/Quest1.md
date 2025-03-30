@@ -46,24 +46,33 @@ Click on Create to Create your first *Copilot Studio Agent*
 ![Create Agent](../../1-copilot-getting-started/images/CreateAgent.jpg)
 
 Click on *New agent*
-![New Agent](../../1-copilot-getting-started/images/NewAgent.jpg)
-
-Provide a **Name**: ```Order Information Agent XXX``` where XXX is the user assigned to you (as we are all working on the same environment this makes it a bit easier to find our own ressources later on)
+![New Agent](../../1-copilot-getting-started/images/NewAgent_3.png)
 
 If you find yourself in a chat experience click on **Skip to configure** on the top right.
+![Skip to configure](../../1-copilot-getting-started/images/SkipToConfigure_3.png)
 
+<!-- 
+TODO: WHAT DO WE NEED THIS FOR?
 Click on the three dots on the top right and select **Edit advanced settings** and select your freshly created solution.
 ![Add Solution](../images/1_AddSolution.png)
+ -->
 
-**Description**: 
-```text 
-This Autonomous Agent replies to User Question around the Ordering Process or specific Orders
-````
+Provide following properties for your agent:
+- **Name** (As we are all working on the same environment, make sure to replace `XXX` with the user ID assigned to you for this workshop;  this makes it a bit easier to find our own ressources later on):
+  ````text
+  Order Information Agent XXX
+  ````
 
-and **Instructions**. The instructions in Autonomous Agents are very important for Autonomous Agents, as the agent will check after each step what to do next with the help of the instructions. During the next Quests the instructions will grow and reflect the new capabilities of the agent.
-````text
-You are an autonomous agent that answers question regarding the ordering process and specific orders.
-````
+- **Description**: 
+  ```text 
+  This Autonomous Agent replies to User Question around the Ordering Process or specific Orders
+  ````
+
+- **Instructions** (The instructions in Autonomous Agents are very important for Autonomous Agents, as the agent will check after each step what to do next with the help of the instructions. During the next Quests the instructions will grow and reflect the new capabilities of the agent):
+  ````text
+  You are an autonomous agent that answers question regarding the ordering process and specific orders.
+  ````
+
 >[!Important]
 > Please keep the **Language** as `English (en-US)`
 
@@ -74,12 +83,12 @@ Then click on **Create**
 Now that the *Copilot Studio Agent* is created, open the Settings
 ![Open Settings](../../1-copilot-getting-started/images/OpenSettings.jpg)
 
-Select *Generate AI* on the left, then *Generative (preview)* and click on *Save*
+Select *Generate AI* on the left, then *Generative* and click on *Save*
 ![Enable Generative AI](../../1-copilot-getting-started/images/EnableGenAi.jpg)
 
 
-## 1.4 Ask a first questions
-Now *Close* the Settings screen and use the *Test your agent* to interact with your new Agent. 
+## 1.4. Have a first chat with your bot
+Now *Close* the Settings screen and use the *Test your agent* on the right side of the screen to interact with your new Agent. (A simple 'Hi' will do for the moment.)
 ![First Questions](../../1-copilot-getting-started/images/FirstQuestion.jpg)
 
 >[!Note]

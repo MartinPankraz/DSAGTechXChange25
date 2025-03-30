@@ -30,6 +30,7 @@ We will use the *When a row is added, modified or deleted* trigger from Microsof
 ![DataverseTrigger](../images/2_DataverseTrigger.png)
 
 Rename it to `A new question was created` and hit **Next**.
+![Specify Trigger Name](../images/2_AddTriggerName.png)
 
 Provide the following properties:
 |Name|Value|
