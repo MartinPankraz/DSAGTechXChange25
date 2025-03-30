@@ -1,6 +1,8 @@
 # Exercise 3: Configure the access package assignment policy with the Microsoft Graph API
 With the base access package created in the [previous exercise](../ex2/ex2.md), you will now add an assignment policy. The policy controls who can request the package and who can approve it. Since the feature for dynamic resolution of the approver with an Azure Logic App extension is still in a preview phase, you will use the Microsoft Graph Explorer to interact with the RESTful Graph API for this new feature. Once the feature is GA (general available), configuration via the Microsoft Entra Admin Center will also be possible. 
 
+**Duration:** 10 minutes
+
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
 | 3.1    |Open a **new browser tab**.<br><br>Go to [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).|<a href="./img/3-1.jpg" target="_blank"><img src="./img/3-1.jpg" width="250"/></a>|
