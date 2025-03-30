@@ -26,7 +26,7 @@ if (-not $clientSp) {
 
 $resourceSp = Get-MgServicePrincipal -Filter "appId eq '$($resourceAppId)'"
 
-for ($i = 42; $i -le 77; $i++) {
+for ($i = 80; $i -le 80; $i++) {
     # The user on behalf of whom access will be granted. The app will be able to access 
     # the API on behalf of this user.
     $userUpnOrId = "user$i@bestruncorp.onmicrosoft.com"
