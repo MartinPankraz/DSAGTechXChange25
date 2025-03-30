@@ -1,7 +1,7 @@
 # 🔌 Challenge 2: Setup Flow + SAP OData Connector
 [< 🤖 Quest 1](Quest1.md) - **[🔧 Quest 3 >](Quest3.md)**
 
-In Challenge 2, we will make your agent autonomous and add some knowledge in the form of an FAQ documents to your agent.
+In Challenge 2, we will make your agent autonomous and add the function to retrieve order information based on the Sales Order ID.
 
 ## 2.1 Ask a Question
 For all the DSAG participants we will provide a Power App to enter Demo Questions which should eventually trigger our Agent. You can find the [Demo Questions App here](https://org9b8075dc.crm4.dynamics.com/main.aspx?appid=ebcffe1d-a308-f011-bae3-7c1e52fba45f). Please use the provided credentials for your M365 user if prompted to log in.
@@ -46,33 +46,44 @@ Select **Create Trigger**
 We will configure the trigger a little further directly in Power Automate. Select the three dots next to your newly created trigger and select **Edit in Power Automate**.
 ![Trigger Automate](../images/2_EditPowerAutomate.png)
 
+When you click on the card **Sends a prompt to the specified copilot for processing** you should see the **message** *Use content from Body*.
 
+This text box is all the information that gets transferred to the agent, so let's use this wisely. As is it will transfer a JSON-object with ALL the information from the created question. 90% of that are internal fields that don't provide actual information. Let's make it specific.
 
-Click on *New Action* and select *New Power Automate flow*
-![Create new Flow](../images/NewPowerAutomateFlow.jpg)
+Copy that text into the box:
+```text
+A new question was added:
+<QuestionID>@{triggerOutputs()?['body/contoso_demoquestionid']}</QuestionID>
+<QuestionTitle>@{triggerOutputs()?['body/contoso_title']}</QuestionTitle>
+<QuestionText>@{triggerOutputs()?['body/contoso_question']}</QuestionText>
+```
+
+![Change Trigger](../images/2_ChangeTrigger.png)
+
+The only purpose of the xml-tags is to make it easy for the LLM to identify the actual information. We will for example need the GUID of the row to update it later. We will from now on refer to that as QuestionID to reliably get the GUID back from the agent - this will get clearer soon.
+
+## 2.3 Lookup Sales Order Information
+
+Click on *Actions* -> *New Action* and select *New Power Automate flow*
+![Create new Flow](../../1-copilot-getting-started/images/NewPowerAutomateFlow.jpg)
  
 > [!Note]
 > If you are getting the pop-up to provide *More Information* click on *Next* and *Skip Setup* like in the previous Quest. 
 
-First thing is to rename your Flow. Click on *Run a flow from Copilot* and provide a new name ````List SAP products of a category````
-![Rename Flow](../images/RenameFlow.jpg)
+First thing is to rename your Flow. Click on *Run a flow from Copilot* and provide a new name ````Lookup Order XXX````
+![Rename Flow](../images/2_RenameFlow.png)
 > [!Note]
->It might be the case that the UI you see looks different compared to the screenshots. In case you want to have the same look and feel, then you can turn off the 'New designer' with the toggle button on the top right.
+> Please again name your flow according to your user.
 
-Select the first step of your flow (e.g. *Skills*) and click on *+ Add an input*. From there select *Text*
-![Select Text](../images/SelectText.jpg)
+Select the first step of your flow (*Run a flow from Copilot*) and click on *+ Add an input*. From there select *Text*
+Now provide a variable name for this input field ````SalesOrderID```` and put that in the description as well.
+![Input Cateogry](../images/2_AddInputSalesOrderID.png)
 
-Now provide a variable name for this input field ````Category```` 
-![Input Cateogry](../images/InputCategory.jpg)
+This will prompt the LLM to extract the Sales Order ID as an input parameter from the incoming Question. With that we can call the SAP OData Service. Click on the *+* sign between the *Skills* and the *Respond to Copilot* actions and select *Add an action*.
+Search for SAP OData and select the *Read OData entity*
 
-Now that we will get a Category from as an input we can call the SAP OData Service. Click on the *+* sign between the *Skills* and the *Respond to Copilot* actions and select *Add an action*
-![Add Action](../images/AddAction.jpg)
+![Add Action](../images/2_ReadOdata.png)
 
-
-Search for SAP OData and select the *Query OData entities*  
-![Select Query OData Entity](../images/QueryODataEntity.jpg)
-
- 
 Provide the following properties:
 |Name|Value|
 |----|-----|
@@ -81,126 +92,105 @@ Provide the following properties:
 |Username|userXXX|
 |Password|\<as provided\>|
 
-![Create new connection](../images/CreateNewConnection.jpg)
+![Create new connection](../../1-copilot-getting-started/images/CreateNewConnection.jpg)
 
 > [!Note]
 > If you are using SAP's Public Demo system *ES5*, then OData Base URI: https://sapes5.sapdevcenter.com/sap/opu/odata/iwbep/GWSAMPLE_BASIC
 
+From the *OData Entity name* drop down select *SalesOrderSet*
 
-From the *OData Entity name* drop down select *ProductSet*
-![Select Sroduct Set](../images/SelectProductSet.jpg)
+Click into the *SalesOrderID* and select *Enter Data from previous step*
 
+![Select Power FX](../images/2_FromPrevious.png)
 
+Now select the `SalesOrderID` from the trigger.
 
-Click *Show all* and select Power FX icon from the $filter to enter a query:
-![Select Power FX](../images/SelectPowerFX.jpg)
-
-Add this expression: 
-````text
-concat('Category eq ', '''', triggerBody()['text'], '''')
-````
-and click on *Add*
-![Add Power FX](../images/AddPowerFX.jpg)
+![Sales Order ID](../images/2_SalesOrderID.png)
  
+Now we just have to add the response from the action as an output. Click on the **Respond to Copilot** Action and click **+ Add an output**.
 
-The final action *Respond to Copilot* will return the list of products from SAP. Select the *Respond to Copilot* action and then *+Add an output* on the left hand side 
-![Add an Output](../images/AddAnOutpu.jpg)
+Call it `Sales Order`. As a value select *Enter Data from previous step* again and search for `body`. Select the `Body` from the OData action. This will provide the whole JSON response from the API back to the agent.
+Also input `Sales Order JSON Response` as a description.
 
-As before select *Text* 
-![Select Text](../images/SelectText2.jpg)
- 
-Provide a name for this new parameter, e.g. ````ProductsForCategory```` and click on the *Enter a value to respond with* field to be able to select the flash sign:
-![Select Variables](../images/SelectVariables.jpg)
-
-From the list of properties select *Body* from *Query OData entities*
-![Select Body](../images/SelectBody.jpg)
-
-For the *Enter a description of the output* enter 
-````text
-Products found in SAP of a given category. Present the result as HTML table including following information: ProductID; Name; Category; Description; Supplier; Price; Currency.
-````
-![Enter Description](../images/DescriptionAndTest.jpg)
+![Body](../images/2_Body.png)
 
 
-Now save can Save / Publish your Power Automate Flow.
-
-
-## 3.2 Test the flow
+## 2.4 Test the flow
 To test the Flow, click on Test. Choose Manually and select *Publish & Test* 
-![Publish and Test](../images/PublishAndTest.jpg)
+![Publish and Test](../../1-copilot-getting-started/images/PublishAndTest.jpg)
 
 
-For the *Category* enter product ID ````Keyboards````  and click on *Run flow*
-![Run Flow](../images/RunFlow.jpg)
+For the *SalesORderID* enter ````0500000006````  and click on *Run flow*
+![Test](../images/2_TestFlow.png)
 
 
 > [!Note]
 > If you are seeing an error like this, just click on *Return to classic designer* and run the test again. 
 > 
-> ![Return to classic Designer](../images/ReturnToClassicDesigner.jpg)
-  
- 
-From the successful run one would normally take out the output body for later use in the copilot studio as input schema for the JSON parsing. In this lab, however, we provide the schema directly to save some time.
-![Results from SAP](../images/ResultFromSAP.jpg)
+> ![Return to classic Designer](../../1-copilot-getting-started/images/ReturnToClassicDesigner.jpg)
 
 > [!Important]
 > Make sure to doublecheck that you renamed the flow to *List SAP products of a category*
+
+## 2.5 Set the connection for your autonomous flow runs
+For your flow to work in autonomous runs we have to make sure it always takes the connection from the user that created the flow.
+Go to [Power Automate](https://make.powerautomate.com) and select **My flows**.
+![Select](../images/2_SelectFlow.png)
+
+Next to **Run only users** hit **Edit**
+![Edit](../images/2_EditUser.png)
+
+Under **SAP OData** select the option that is **NOT** `Provided by run only user`.
+![Edit](../images/2_OtherOption.png)
  
-## 3.3 Connect the Copilot with the Flow
+## 2.6 Connect the Copilot with the Flow
 Go back to the Copliot Studio window and click on *Refresh*
-![Refresh flows](../images/RefreshFlows.jpg)
+![Refresh flows](../../1-copilot-getting-started/images/RefreshFlows.jpg)
 
 > [!Note]
-> If this windows is gone, just click on *Actions* -> *Add Actions* again and search for the flow that you had previously created. 
- 
-Chose the previously created Flow *List SAP products of a category*
-![Select flows](../images/SelectFlow.jpg)
+> If this windows is gone, just click on *Actions* -> *Add Actions* again and search for the flow that you had previously created. You have to probably refresh again for your new flow to appear.
 
-For now just click on *Add action*
-![Add Action](../images/AddActionInCopilotStudio.jpg)
 
-Under Actions you should now see the Action that was just created. Click on it.
-![Click on Action](../images/ClickOnAction.jpg)
+For now just click on *Add action*. You should now see the Action that was just created, or you can search for your user number.
+![Search](../images/2_SearchFlow.png)
 
-Enter the *Description for the agent to know when to use this action* 
+It should now be added under Actions. Click on it.
+
+Remove your User number from the **Action name** and **Display name** and enter the *Description for the agent to know when to use this action* 
 ````text
-This agents returns a list of products in a given category. 
+Lookup Order when a Sales Order ID is provided in the question.
 ````
-and click on *Inputs*
-![Enter Description](../images/EnterDescription.jpg)
+![Enter Description](../images/2_FlowDescription.png)
 
 
-Under the *Inputs* tabe, add the following text into the Description box so that Gen AI knows how to set the input for the flow:
+Under the *Inputs* and *Outputs* tab, the Descriptions we entered in the Power Automate editor should already be provided.
 
-````text
-Product Category. Only one single category can be chosen as input from this list. It is case-sensitive and must be written exactly like below: Accessories, Notebooks, Laser Printers, Mice, Keyboards, Mousepads, Scanners, Speakers, Headsets, Software, PCs, Smartphones, Tablets, Servers, Projectors, MP3 Players, Camcorders
-```` 
-![Enter Input Description](../images/EnterInputDescription.jpg)
+Now Save and publish your agent.
 
-
-Now Save your agent.
-
-## 3.4 Test the Copilot in the test pane
+## 2.7 Test the Copilot in the test pane
 Open the Test pane and give it a try by asking: 
 ````text
-show me keyboards in the system
+When was the order 0500000003 created and how much does it cost?
 ````
+> [!Note]
+> You might have to connect first
+>
+>![Test and Connect](../../1-copilot-getting-started/images/TestAndConnect.jpg)
+>
+>Click on *Connect*
+>![Connect](../../1-copilot-getting-started/images/Connect.jpg)
+>
+>And *Submit*
+>![Submit](../../1-copilot-getting-started/images/ConnectSubmit.jpg)
+>
+>Go back to the Copilot Studio tab and click on Retry.  
+>![Retry Connection](../../1-copilot-getting-started/images/RetryConnection.jpg)
 
-For the first test you need to connect with the SAP OData Connector. Click on *Connect*
-![Test and Connect](../images/TestAndConnect.jpg)
-
-Click on *Connect*
-![Connect](../images/Connect.jpg)
-
-And *Submit*
-![Submit](../images/ConnectSubmit.jpg)
-
-Go back to the Copilot Studio tab and click on Retry. As a result you should see an HTML table with Keyboards from the SAP system. 
-![Retry Connection](../images/RetryConnection.jpg)
-
-
+The screen should jump to the activity tab and execute the *Lookup Order* Flow with the extracted *SalesOrderID* as an input and the JSON as an output.
 
 # Where to next?
+
+We haven't created an action to actually respond to the question. Let's find out in the next quest how to do that!
 
 **[🤖 Quest 1](Quest1.md) - [🔧 Quest 3 >](Quest3.md)
 
