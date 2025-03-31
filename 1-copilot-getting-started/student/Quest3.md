@@ -51,9 +51,13 @@ and click on the *Power Fx* icon and add
 ````json
 outputs('Query_OData_entities')?['body/data']
 ````
+![Change response  parameter](../images/Quest3/ChangeRespondToCopilot02.jpg)
+
+Then click first on *Add* ...
+
 ![Change response  parameter](../images/Quest3/ChangeRespondToCopilot.jpg)
 
-Then click first on *Add* and then on *Publish* to save and Publish the flow. 
+... and then on *Publish* to save and Publish the flow. 
 
 
 ### 4.2 Create a Topic “SAP Product Data”
