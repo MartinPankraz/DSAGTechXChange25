@@ -163,6 +163,9 @@ Remove your User number from the **Action name** and **Display name** and enter 
 ````text
 Lookup Order when a Sales Order ID is provided in the question.
 ````
+> [!Note]
+> If the UI does not provide you with the option to add a description at this step, then jsut click on add action first. Now click on the newly created agent and change the description and save.
+
 ![Enter Description](../images/2_FlowDescription.png)
 
 
