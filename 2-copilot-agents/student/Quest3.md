@@ -44,6 +44,8 @@ We don't have to provide any output parameters for this flow. Save your flow by 
 Go back to your agent, refresh and add your flow as an action.
 Click on the added action and clean up the **Action name**, **Display name** and add the following **Description**:
 `Answer Sales or Sales Order related Question.`
+> [!Note]
+> If the UI does not provide you with the option to add a description at this step, then jsut click on add action first. Now click on the newly created agent and change the description and save.
 
 ![Add Action](../images/3_AddAction.png)
 
