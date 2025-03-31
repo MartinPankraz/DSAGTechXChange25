@@ -1,7 +1,4 @@
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity",
-    "displayName": "Dynamic approver",
-    "customExtensionStageSettings": [
+        ,
         {
             "stage": "assignmentRequestApproved",
             "customExtension": {
@@ -16,5 +13,3 @@
                 "id": "<Teams Extension ID>"
             }
         }
-    ]
-}
