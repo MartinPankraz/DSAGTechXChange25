@@ -53,7 +53,7 @@ outputs('Query_OData_entities')?['body/data']
 ````
 ![Change response  parameter02](../images/Quest3/ChangeRespondToCopilot_02.jpg) 
 
-Then click first on *Add* ...
+Then click first on *Add* or *Hinzufügen* ...
 
 ![Change response  parameter](../images/Quest3/ChangeRespondToCopilot.jpg)
 
