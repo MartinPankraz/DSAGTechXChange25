@@ -178,16 +178,17 @@ When was the order 0500000003 created and how much does it cost?
 > [!Note]
 > You might have to connect first
 >
->![Test and Connect](../../1-copilot-getting-started/images/TestAndConnect.jpg)
+>![Test and Connect](../images/2_ConnectFlow.png)
 >
 >Click on *Connect*
->![Connect](../../1-copilot-getting-started/images/Connect.jpg)
+>![Connect](../images/2_CreateConnection.png)
 >
 >And *Submit*
->![Submit](../../1-copilot-getting-started/images/ConnectSubmit.jpg)
+>![Submit](../images/2_SubmitConnection.png)
+>![Connection Created](../images/2_ConnectionCreated.png)
 >
 >Go back to the Copilot Studio tab and click on Retry.  
->![Retry Connection](../../1-copilot-getting-started/images/RetryConnection.jpg)
+>![Retry Connection](../images/2_RetryConnection.png)
 
 The screen should jump to the activity tab and execute the *Lookup Order* Flow with the extracted *SalesOrderID* as an input and the JSON as an output.
 
