@@ -34,7 +34,7 @@ Provide the created Input Parameter `Answer` as the **Response**, set teh **Stat
 
 ![Update Parameters](../images/3_UpdateParameters.png)
 
-We don't have to provide any output parameters for this flow. Save your flow by clicking on 'Save'/'Save draft'.
+We don't have to provide any output parameters for this flow. Save your flow by clicking on 'Save'/'Save draft' and 'Publish'.
 
 > [!Note]
 > If you are not part of the DSAG event, of course you have to provide the answer accordingly to your SharePoint-list or as an answer to an incoming Email, depending how you set your trigger up.
