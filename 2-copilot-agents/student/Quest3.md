@@ -54,7 +54,7 @@ Click on the added action and clean up the **Action name**, **Display name** and
 
 Your agent learned a few new tricks. Let's make sure to mention them in the instructions (the knowledge part will follow soon, so let's already add it 😉).
 
-Click on *Overview*. Next to **Details** select **Edit**. For *General instructions* add the following:
+Click on *Overview*. Next to **Details** select **Edit**. For *General instructions* add the following if not already added in previous steps:
 
 You are an autonomous agent that answers question regarding the ordering process and specific orders.
 
