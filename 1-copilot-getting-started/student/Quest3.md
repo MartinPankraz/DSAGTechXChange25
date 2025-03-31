@@ -51,7 +51,7 @@ and click on the *Power Fx* icon and add
 ````json
 outputs('Query_OData_entities')?['body/data']
 ````
-![Change response  parameter](../images/Quest3/ChangeRespondToCopilot02.jpg)
+![Change response  parameter02](../images/Quest3/ChangeRespondToCopilot_02.jpg) 
 
 Then click first on *Add* ...
 
