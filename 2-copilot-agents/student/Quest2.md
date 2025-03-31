@@ -64,7 +64,7 @@ The only purpose of the xml-tags is to make it easy for the LLM to identify the 
 
 ## 2.3 Lookup Sales Order Information
 
-Click on *Actions* -> *New Action* and select *New Power Automate flow*
+Go back to Copilot Studio to add an action. Click on *Actions* -> *New Action* and select *New Power Automate flow*
 ![Create new Flow](../../1-copilot-getting-started/images/NewPowerAutomateFlow.jpg)
  
 > [!Note]
