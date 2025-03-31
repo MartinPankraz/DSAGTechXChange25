@@ -20,11 +20,7 @@ Consider especially the center of the image depicting the assets **policy** and 
 
 ![Policy import screenshot](assets/2-1.png)
 
-<!-- TODO: Twek the sceenshot to say [your-sap-user-name]... -->
-
 * Click Save.
-
-<!-- Quite a lot of content in there. Do we want to add an (optional) section explaining what these sections do? -->
 
 Now your SAP OData API only accepts OAuth 2.0 tokens issued by the SAP OAuth server. The policy will take care of the token dance and will exchange the Entra ID token for an SAP OAuth token. Best of all: token caching is built-in, so SAP OAuth tokens are only requested when they are expired. This is a great performance improvement.
 
@@ -36,7 +32,7 @@ Now your SAP OData API only accepts OAuth 2.0 tokens issued by the SAP OAuth ser
 |------------------------------------|------------------------------------|-----------|----------------------|
 | your-sap-username-SAPOAuthScope    | your-sap-username-SAPOAuthScope    | Plain     | ZGWSAMPLE_BASIC_0001 |
 
-![](assets/2-2.png)
+![Screenshot of Named Values section](assets/2-2.png)
 
 Remaining ones are shared and have been pre-provided on the Azure APIM instance already.
 
@@ -53,7 +49,9 @@ Remaining ones are shared and have been pre-provided on the Azure APIM instance 
 
 ## Adjust the policy for your named value
 
-* Navigate to the **API Policies** section of your OData API, selecting the code icon `</>` under **Inbound Processing** and adjust the policy to use your oauth scope variable. [Search](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SAP%20using%20AAD%20JWT%20token.xml#L50) for `{{SAPOAuthScope}}` variable assignment (hint: line 50) and replace it with your individual value `{{your-sap-username-SAPOAuthScope}}`. That's it. Don't touch the local variable names!
+* Navigate to the **API Policies** section of your OData API, selecting the code icon `</>` under **Inbound Processing** and adjust the policy to use your oauth scope variable. [Search](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SAP%20using%20AAD%20JWT%20token.xml#L50) for `{{SAPOAuthScope}}` variable assignment (hint: line 50) and replace it with your individual value `{{your-sap-username-SAPOAuthScope}}`. That's it.
+
+**Don't touch the local variable names!**
 
 ## Where to next?
 

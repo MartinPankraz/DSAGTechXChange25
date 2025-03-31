@@ -89,7 +89,7 @@ https://portal.azure.com/?feature.customportal=false#@bestruncorp.onmicrosoft.co
 
     (Make sure to pick `HTTPS` instead of `HTTP(S)`.)
 
-  * **Web Service URL**: `https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
+  * **Web Service URL**: `https://10.0.0.7:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
 
   * **Base URL (take note of this for later)**: `https://bestrun-apim.azure-api.net/your-sap-username/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
 
@@ -117,7 +117,7 @@ https://make.powerautomate.com/environments/Default-85642982-0095-4777-a3e2-147c
 
 ![Screenshot of flow create experience](assets/1-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > We are taking this shortcut and avoid creating a full UI in Power Apps to focus on the Principal Propagation aspect given the short hands-on session duration.
 
 * Add a new action, search for **SAP OData**, fill the details, and provide your credentials.
@@ -145,8 +145,6 @@ https://make.powerautomate.com/environments/Default-85642982-0095-4777-a3e2-147c
 * Open the 'Flow Runs Page' to confirm your test has completed successfully.
 
 ![Screenshot showing the successful test execution of the flow.](assets/1-3-c.png)
-
-
 
 Ok, all access prepared. You are all set up to do some principal propagation!
 
