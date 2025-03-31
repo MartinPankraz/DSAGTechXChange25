@@ -132,6 +132,9 @@ For the *SalesORderID* enter ````0500000006````  and click on *Run flow*
 > [!Important]
 > Make sure to doublecheck that you renamed the flow to *List SAP products of a category*
 
+You should see a successful run of your flow:
+> ![Flow Test](../images/2_SuccessfulFlowTest.png)
+
 ## 2.5 Set the connection for your autonomous flow runs
 For your flow to work in autonomous runs we have to make sure it always takes the connection from the user that created the flow.
 Go to [Power Automate](https://make.powerautomate.com) and select **My flows**.
