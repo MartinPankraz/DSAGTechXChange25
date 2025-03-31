@@ -82,7 +82,7 @@ We will now create a new question in the database. Go to the [Demo Question App]
 
 ![Demo Question](../images/3_DemoQuestion.png)
 
-After a minute the agent should trigger.
+Click on 'Save'. After a minute the agent should trigger.
 
 In th **Activity** tab you should get a new row giving you the information about the agent run.
 
