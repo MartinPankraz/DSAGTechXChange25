@@ -6,6 +6,7 @@ In Challenge 2, we will make your agent autonomous and add the function to retri
 ## 2.1 Ask a Question
 For all the DSAG participants we will provide a Power App to enter Demo Questions which should eventually trigger our Agent. You can find the [Demo Questions App here](https://org9b8075dc.crm4.dynamics.com/main.aspx?appid=ebcffe1d-a308-f011-bae3-7c1e52fba45f). Please use the provided credentials for your M365 user if prompted to log in.
 For this tutorial we don't care where the question actually came from, but the Power Platform also has fantastic capabilities to build a small ticket system and [connect a shared Outlook mailbox](https://learn.microsoft.com/en-us/power-platform/admin/connect-exchange-online).
+We can also directly trigger events from actions within SAP with a webhook on the Business Technology Platform. Holger explains how to do this in [this video](https://www.youtube.com/watch?v=bpZ2i4n0YbI).
 
 >[!Note]
 > If you do this on your own, either create a SharePoint-list similiar to our app you can use as a trigger. If you already have Power Apps experience you can also build a small Model-Driven App like the one I'll show in the screenshots.
@@ -97,7 +98,7 @@ Provide the following properties:
 ![Create new connection](../../1-copilot-getting-started/images/CreateNewConnection.jpg)
 
 > [!Note]
-> If you are using SAP's Public Demo system *ES5*, then OData Base URI: https://sapes5.sapdevcenter.com/sap/opu/odata/iwbep/GWSAMPLE_BASIC
+> If you are using SAP's Public Demo system *ES5*, then OData Base URI is: https://sapes5.sapdevcenter.com/sap/opu/odata/iwbep/GWSAMPLE_BASIC
 
 From the *OData Entity name* drop down select *SalesOrderSet*
 
@@ -166,7 +167,7 @@ Remove your User number from the **Action name** and **Display name** and enter 
 Lookup Order when a Sales Order ID is provided in the question.
 ````
 > [!Note]
-> If the UI does not provide you with the option to add a description at this step, then jsut click on add action first. Now click on the newly created agent and change the description and save.
+> If the UI does not provide you with the option to add a description at this step, then just click on add action first. Now click on the newly created agent and change the description and save.
 
 ![Enter Description](../images/2_FlowDescription.png)
 

@@ -74,6 +74,14 @@ Handle the requests the following way:
 
 ![Save Instructions](../images/3_SaveInstructions.png)
 
+## 3.4 Disable all the topics
+
+Topics are used in conversational agents as prebuilt conversation blocks. Although they can be used in autonomous agents as well, we won't do that in this agent. Therefore we will disable all the topics. We do that because the topics will otherwise get presented to the orchestrating LLM as options for the next action.
+
+![Disable](../images/3_Disable.png)
+
+Make sure to disable the *Custom* and *System* topics.
+
 **Save** and **Publish** your agent, to finally try it out!
 
 ## 3.4 Test the agent
@@ -86,7 +94,7 @@ We will now create a new question in the database. Go to the [Demo Question App]
 
 Click on 'Save'. After a minute the agent should trigger.
 
-In th **Activity** tab you should get a new row giving you the information about the agent run.
+In the **Activity** tab you should get a new row giving you the information about the agent run.
 
 ![Run](../images/3_Activity.png)
 
