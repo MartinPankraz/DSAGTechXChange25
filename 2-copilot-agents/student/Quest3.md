@@ -56,6 +56,7 @@ Your agent learned a few new tricks. Let's make sure to mention them in the inst
 
 Click on *Overview*. Next to **Details** select **Edit**. For *General instructions* add the following if not already added in previous steps:
 
+````md
 You are an autonomous agent that answers question regarding the ordering process and specific orders.
 
 ## Actions
@@ -69,6 +70,7 @@ Handle the requests the following way:
 * When a frequently asked question is asked look into the knowledge base first
 * If the Question contains a Sales Order ID or Order ID use the *LookUp Order* action before answering
 * In the end use the *Answer Question* action if you found an answer
+```` 
 
 ![Save Instructions](../images/3_SaveInstructions.png)
 
