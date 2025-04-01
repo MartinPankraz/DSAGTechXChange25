@@ -22,6 +22,7 @@ In the UI, select Identity Provider httpsetdtestlogs.accounts.ondemand.c
 </p>
 
 Login with User: hackinaday@etdsap.com, or with its alias SAPHackInADay
+
 PW is given in the credentials 
 
 Go to Tile: 'Manage Alerts'
