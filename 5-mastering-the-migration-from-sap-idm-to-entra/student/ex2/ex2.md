@@ -5,7 +5,7 @@ To request assignment to the *SAP BTP Developer* group, an access package is cre
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
-| 2.1    |Sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) with your user user\<41..70\>@bestruncorp.onmicrosoft.com. |<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
+| 2.1    |Sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) using the link [https://aka.ms/EMApprovalExtensibility](https://aka.ms/EMApprovalExtensibility) with your user user\<41..70\>@bestruncorp.onmicrosoft.com. |<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
 | 2.2    |Click **Next**.|<a href="./img/2-2.jpg" target="_blank"><img src="./img/2-2.jpg" width="250"/></a>|
 | 2.3    |Confirm with **Done**.|<a href="./img/2-3.jpg" target="_blank"><img src="./img/2-3.jpg" width="250"/></a>|
 | 2.4    |Select **Catalogs** from the navigation menu. In the search bar, enter your *Student*-number. Select the catalog **Student\<41..80\>** with the number assigned to you from the list.|<a href="./img/2-4.jpg" target="_blank"><img src="./img/2-4.jpg" width="250"/></a>|
