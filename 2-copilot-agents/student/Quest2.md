@@ -62,6 +62,8 @@ A new question was added:
 
 The only purpose of the xml-tags is to make it easy for the LLM to identify the actual information. We will for example need the GUID of the row to update it later. We will from now on refer to that as QuestionID to reliably get the GUID back from the agent - this will get clearer soon.
 
+Make sure to click on *Publish* to Save and release the new changes.  
+
 ## 2.3 Lookup Sales Order Information
 
 Go back to Copilot Studio to add an action. Click on *Actions* -> *New Action* and select *New Power Automate flow*
@@ -116,7 +118,7 @@ Also input `Sales Order JSON Response` as a description.
 
 
 ## 2.4 Test the flow
-To test the Flow, click on Test. Choose Manually and select *Publish & Test* 
+To test the Flow, first Save and Publish the flow, then click on Test. Choose Manually and select *Publish & Test* 
 ![Publish and Test](../../1-copilot-getting-started/images/PublishAndTest.jpg)
 
 
