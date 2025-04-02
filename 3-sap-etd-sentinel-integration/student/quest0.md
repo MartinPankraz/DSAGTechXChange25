@@ -23,6 +23,13 @@ You will be redirected to the Entra-ID Login page. Once you are authenticated, y
 > [!NOTE]
 > In such lab environments MFA is often not configured, because otherwise all participants would have needed to run through the setup process with their own mobile phone and the Microsoft Authenticator app.
 
+> [!IMPORTANT]
+> When prompted to setup MFA on login, consider choosing the option to skip from the link at the bottom right of the popup.
+
+<p align="center" width="100%">
+<img alt="Step 28" src="assets/quest3/3-49.jpg"  width="600">
+</p>
+
 ## The evil proxy
 
 So far, so good. In the next quests we will make sure that a user will actually click on a link that will not directly go to the SAP Fiori Launchpad, but will be proxied to an "Adversary in the middle" (AitM). This AitM has now the chance to trace all traffic and capture the relevant session cookies which later can be used to authenticate -- without knowing any user credentials.

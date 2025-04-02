@@ -51,11 +51,11 @@ Click on *New agent*
 If you find yourself in a chat experience click on **Skip to configure** on the top right.
 ![Skip to configure](../../1-copilot-getting-started/images/SkipToConfigure_3.png)
 
-<!-- 
-TODO: WHAT DO WE NEED THIS FOR?
 Click on the three dots on the top right and select **Edit advanced settings** and select your freshly created solution.
 ![Add Solution](../images/1_AddSolution.png)
- -->
+
+> [!Note]
+> Working in Solutions is a best practice in the whole Power Platform. In this case it will automatically place all your artifacts in the same Solution. You would need that for the ALM process and it's tedious to add it afterwards.
 
 Provide following properties for your agent:
 - **Name** (As we are all working on the same environment, make sure to replace `XXX` with the user ID assigned to you for this workshop;  this makes it a bit easier to find our own ressources later on):

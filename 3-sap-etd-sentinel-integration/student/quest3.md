@@ -21,8 +21,9 @@ In the UI, select Identity Provider httpsetdtestlogs.accounts.ondemand.c
 <img alt="Step 1" src="assets/quest3/3-40.jpg"  width="600">
 </p>
 
-Login with User: SAPHackInADay
-PW: hkjhhkjhkjh??kjlk (tbd)
+Login with User: hackinaday@etdsap.com, or with its alias SAPHackInADay
+
+PW is given in the credentials 
 
 Go to Tile: 'Manage Alerts'
 <p align="center" width="100%">
@@ -117,12 +118,24 @@ To query the SAP ETD Alerts for logins of your user (e.g. user1@bestruncorp.onmi
 <img alt="Step 7" src="assets/quest3/3-7.png"  width="600">
 </p>
 
-Inspect the latest entry in the query result which shows the attacker's login with the stolen cookie of your user. Notice the *User* and *Computer* data fields. Since the IP address of the attacker is **NOT** in the range of your corporate network you will use this data to automate the threat detection with Sentinel.
+Inspect the latest entry in the query result which shows the attacker's login with the stolen cookie of your user. Notice the *extracted_user_ip* data fields. Since the IP address of the attacker is **NOT** in the range of your corporate network you will use this data to automate the threat detection with Sentinel.
 
-Go back to the Sentinel main navigation menu by clicking the link in the breadcrumb navigation.
+```kql
+SAPETDAlerts_CL
+  | mv-expand NormalizedTriggeringEvents
+  | extend extracted_sap_user = NormalizedTriggeringEvents.UserAccountTargeted
+  | extend extracted_user_ip = tostring(NormalizedTriggeringEvents.NetworkIPAddressInitiator)
+  | where extracted_sap_user == "USER298";// replace with your user name
+```
+
+> [!IMPORTANT]
+> Allow 5mins for the alert to be ingested into SAP ETD and from there into Sentinel after you have triggered it in SAP S/4HANA. If you don't see any alerts in Alerts, please check the time range of your KQL query and make sure that you are using the correct user name in your filter ("where" clause).
+
 <p align="center" width="100%">
 <img alt="Step 8" src="assets/quest3/3-8.png"  width="600">
 </p>
+
+Go back to the Sentinel main navigation menu by clicking the link in the breadcrumb navigation.
 
 ### Automate threat detection for the scenario with an Analytic Rule
 
@@ -142,14 +155,15 @@ The **SAP - Networks** watchlist currently contains one entry which represents t
 <img alt="Step 10" src="assets/quest3/3-10.png"  width="600">
 </p>
 
-Select **Analytics** from the menu and switch to the **Rule templates** tab.
+Select **Analytics** from the menu and switch to the **Active Rules** tab.
 
-Search for a built-in rule template to detect logins from unexpected networks by entering "Login from" in the search bar. On the "SAP ETD - Login from unexpected network" built-in rule, select **Create rule**. 
+We left a blueprint rule **SAP ETD - Blueprint - Login from unexpected network** for you to copy from. Select **Duplicate**.
+
 <p align="center" width="100%">
 <img alt="Step 11" src="assets/quest3/3-11.png"  width="600">
 </p>
 
-Change the name of your new analytic rule by adding your user name to it, e.g. "SAP - **User1** login from unexpected network". Optionally, change the description accordingly.
+Change the name of your new analytic rule by adding your user name to it, e.g. "SAP ETD - **User1** login from unexpected network". Optionally, change the description accordingly.
 
 Click **Next: Set rule logic**.
 <p align="center" width="100%">
@@ -201,10 +215,10 @@ Leave the settings unchanged and click **Next: Automated response**.
 <img alt="Step 17" src="assets/quest3/3-17.png"  width="600">
 </p>
 
-Create a new automation rule for sending the notification to the SOC via Microsoft Teams by clicking **Add new**.
-
 > [!CAUTION]
 > Create the rule **first without automation** to avoid errors in the rule creation process. **Reopen** it afterwards and add the automation then.
+
+Create a new automation rule for sending the notification to the SOC via Microsoft Teams by clicking **Add new**.
 
 <p align="center" width="100%">
 <img alt="Step 18" src="assets/quest3/3-18.png"  width="600">
@@ -279,6 +293,13 @@ In the *body* section, scroll down to find the incident's ID that triggered the 
 ### Check the notification in Microsoft Teams
 
 Finally, login to [Microsoft Teams](https://teams.microsoft.com) with the SOC user **sapsentinel@bestruncorp.onmicrosoft.com**. Login with the same password as for your user.
+
+> [!IMPORTANT]
+> When prompted to setup MFA on login, choose the option to skip from the link at the bottom right of the popup. This is a shared account and you will disrupt others by registering your device. Or answer a lot of prompts. 😎
+
+<p align="center" width="100%">
+<img alt="Step 28" src="assets/quest3/3-49.jpg"  width="600">
+</p>
 
 <p align="center" width="100%">
 <img alt="Step 28" src="assets/quest3/3-28.png"  width="600">

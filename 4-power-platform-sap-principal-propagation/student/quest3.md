@@ -7,7 +7,13 @@ In this quest you will conclude your journey and experience yourself what it tak
 ## Adjust the SAP OData connection on Power Automate to use Entra ID via Azure APIM
 
 * Enhance your existing Power Automate flow to use Entra ID via Azure API Management authentication scheme. This is a prerequisite for the SAP Principal Propagation.
-* Add an OData read operation for the entity set `BusinessPartnerSet` and an individual business partner to your existing flow. You can pick any of the business partners outputted from the previous flow run. Be aware that you are using a shared tenant and other users might have changed the same business partner data in the meantime.
+
+![Screenshot of oauth with APIM auth in PowerAutomate](assets/3-1.png)
+
+* Add an **OData Read entity** operation for the entity set `BusinessPartnerSet` and an individual business partner to your existing flow. You can pick any of the business partner ids outputted from the previous flow run.
+
+> [!IMPORTANT]
+> Be aware that you are using a shared tenant and other users might have changed the same business partner data in the meantime.
 
 ```bash
 /BusinessPartnerSet('0100000000')
