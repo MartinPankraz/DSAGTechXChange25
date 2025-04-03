@@ -1,5 +1,5 @@
 # Exercise 2: Register the custom extension for dynamic approval
-To request assignment to the *SAP BTP Developer* group, an access package is created that uses an existing logic app to find the approver based on the request context. You will use the Microsoft Entra admin center with a preview feature flag enabled to configure the access package, starting with the registration of the logic app as a custom extension in your catalog. 
+To request assignment to the *SAP BTP Developer* group, an access package is created that uses an existing logic app to find the approver based on the request context. You will use the Microsoft Entra admin center with a preview feature flag enabled for *dynamic approval* to configure the access package, starting with the registration of the logic app as a custom extension in your catalog. 
 
 **Duration:** 5 minutes.
 
