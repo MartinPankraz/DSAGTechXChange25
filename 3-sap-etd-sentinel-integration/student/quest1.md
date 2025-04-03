@@ -48,13 +48,14 @@ podman machine start
 * Verify the github project "DSAGTechXChange25" is present on your Desktop and navigate into the folder `docker-kali` from your terminal. If not run the following command to clone the project.
 
 ```bash
+cd ~\Desktop
 git clone https://github.com/MartinPankraz/DSAGTechXChange25.git
 ```
 
 * Navigate into the `docker-kali` folder.
 
 ```bash
-cd ~\.\Desktop\DSAGTechXChange25\3-sap-etd-sentinel-integration\docker-kali\
+cd ~\Desktop\DSAGTechXChange25\3-sap-etd-sentinel-integration\docker-kali\
 ```
 
 * Open a parallel session on your terminal (second tab or instance) and execute the following commands to start the Evilginx3 process.
