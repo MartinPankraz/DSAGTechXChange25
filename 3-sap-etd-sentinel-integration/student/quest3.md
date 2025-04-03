@@ -338,13 +338,6 @@ Congratulations for completing quest 3!
 
 ## Update the [leaderboard](https://martinpankraz.github.io/crispy-potato/) with your progress⏱
 
-## Claiming your reward
-
-🏆Finish [quest 3](quest3.md), and claim [your badge](https://dsagwsrgb4f3.z1.web.core.windows.net/).
-
-> [!TIP]
-> Open the developer tools <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>i</kbd> on that website to find the passphrase on the website code. Search for "secret". 😎 May the ninja-cat be with you.
-
 ## Where to next?
 
 [< Quest 2 ](quest2.md) - **[🏠Home](../README.md)** - [ Quest 4 >](quest4.md)
