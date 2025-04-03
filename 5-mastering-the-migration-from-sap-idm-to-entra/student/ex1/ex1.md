@@ -1,4 +1,4 @@
-# Exercise 1: Setup MFA for your user and test access to SAP BTP before requesting the access package
+# Exercise 1: Setup MFA for your user and test access to SAP BTP
 In this first exercise you setup MFA for your developer user and try to login to SAP Business Application Studio. As expected, access will be denied because your user is not yet assigned to the *SAP BTP Developer* group in Entra.
 
 **Duration: 5 minutes.**
