@@ -14,6 +14,10 @@ Login to Copilot Studio [https://copilotstudio.microsoft.com/](https://copilotst
 > 
 > ![More information](../../1-copilot-getting-started/images/MoreInfo.jpg)
 > 
+> [!Note]
+> and if you get a screen like this, please click on *Skip for now*
+> ![Skip 14](../../1-copilot-getting-started/images/Skip14.jpg)
+> 
 > and click on *Skip setup*
 > 
 > ![Skip Setup](../../1-copilot-getting-started/images/SkipSetup.jpg)
