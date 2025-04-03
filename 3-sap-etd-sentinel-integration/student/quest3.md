@@ -155,9 +155,10 @@ The **SAP - Networks** watchlist currently contains one entry which represents t
 <img alt="Step 10" src="assets/quest3/3-10.png"  width="600">
 </p>
 
-Select **Analytics** from the menu and switch to the **Rule templates** tab.
+Select **Analytics** from the menu and switch to the **Active Rules** tab.
 
-Search for a built-in rule template to detect logins from unexpected networks by entering "Login from" in the search bar. On the **"SAP ETD** - Login from unexpected network" built-in rule, select **Create rule**.
+We left a blueprint rule **SAP ETD - Blueprint - Login from unexpected network** for you to copy from. Select **Duplicate**.
+
 <p align="center" width="100%">
 <img alt="Step 11" src="assets/quest3/3-11.png"  width="600">
 </p>
@@ -214,10 +215,10 @@ Leave the settings unchanged and click **Next: Automated response**.
 <img alt="Step 17" src="assets/quest3/3-17.png"  width="600">
 </p>
 
-Create a new automation rule for sending the notification to the SOC via Microsoft Teams by clicking **Add new**.
-
 > [!CAUTION]
 > Create the rule **first without automation** to avoid errors in the rule creation process. **Reopen** it afterwards and add the automation then.
+
+Create a new automation rule for sending the notification to the SOC via Microsoft Teams by clicking **Add new**.
 
 <p align="center" width="100%">
 <img alt="Step 18" src="assets/quest3/3-18.png"  width="600">
