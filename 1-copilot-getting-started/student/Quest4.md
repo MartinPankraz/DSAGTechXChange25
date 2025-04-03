@@ -128,7 +128,7 @@ Since this is a first time connection, we need to authenticate again. Click on *
 
 
 > [!Note]
-> You can open a new browser tab and query the product to check whether the price has been updated by querying the Odata service. Use following URL: https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet('HT-8003') 
+> You can open a new browser tab and query the product to check whether the price has been updated by querying the Odata service. Use following URL: https://bestrun-apim.azure-api.net/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet('HT-8003')?saml2=disabled 
 
  
 # Where to next?
