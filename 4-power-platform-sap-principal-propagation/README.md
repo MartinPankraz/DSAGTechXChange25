@@ -11,9 +11,6 @@ SAP Principal Propagation is a mechanism that allows the mapping of a non-SAP en
 
 * Familiarize yourself with the scenario using the provided [Powerpoint deck](../misc/welcome.pptx).
 
-> [!TIP]
->🏆Finish the final quest, collect the pass phrase, and redeem it to claim [your badge](https://dsagwsrgb4f3.z1.web.core.windows.net/) 😎
-
 ## 📌Buckle up and start your lab [**👉here**](student/README.md)📌
 
 ⏱️⩇⩇:⩇⩇⩇⩇:⩇⩇

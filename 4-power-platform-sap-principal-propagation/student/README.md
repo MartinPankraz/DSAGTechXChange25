@@ -58,9 +58,6 @@ Our journey will start from the very beginning and will take you through the fol
 🌟🌟🌟
 🕒 30 min
 
-> [!TIP]
->🏆Finish [quest 3](quest3.md), and claim [your badge](https://dsagwsrgb4f3.z1.web.core.windows.net/). Open the developer tools <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>i</kbd> on that website to find the passphrase on the website code. Search for "secret". 😎 May the ninja-cat be with you.
-
 ## Where to next?
 
 **[🏠Home](../README.md)** - [ Quest 0 >](quest1.md)

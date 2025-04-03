@@ -22,9 +22,6 @@ This workshop gives you a glimpse into the world of a [red team'er](https://en.w
 
 * Familiarize yourself with the scenario using the provided [Powerpoint deck](../misc/welcome.pptx).
 
-> [!TIP]
->🏆Finish the final quest, collect the pass phrase, and redeem it to claim [your badge](https://dsagwsrgb4f3.z1.web.core.windows.net/) 😎
-
 ## 📌Buckle up and start your lab [**👉here**](student/README.md)📌
 
 ⏱️⩇⩇:⩇⩇⩇⩇:⩇⩇
