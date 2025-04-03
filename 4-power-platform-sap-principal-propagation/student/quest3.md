@@ -27,10 +27,6 @@ The prior read ensured the retrieval of an ETag to ensure concurrency of the ODa
 
 * Execute the flow and verify the run history. You should see a successful run of the OData update action.
 
-## Claiming your reward
-
-🏆Finish [quest 3](quest3.md), and claim [your badge](https://dsagwsrgb4f3.z1.web.core.windows.net/).
-
 ## Where to next?
 
 [< Quest 2 ](quest2.md) - **[🏠Home](../README.md)**
