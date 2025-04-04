@@ -91,7 +91,7 @@ https://portal.azure.com/?feature.customportal=false#@bestruncorp.onmicrosoft.co
 
   * **Web Service URL**: `https://10.0.0.7:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
 
-  * **Base URL (take note of this for later)**: `https://bestrun-apim.azure-api.net/your-sap-username/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
+  * **Base URL (take note of this for later)**: `https://bestrun-apim.azure-api.net/your-sap-username/sap/opu/odata/iwbep/GWSAMPLE_BASIC?saml2=disabled`
 
   * **Subscription required**: `unchecked`
 
@@ -102,7 +102,7 @@ https://portal.azure.com/?feature.customportal=false#@bestruncorp.onmicrosoft.co
 
 ### Call your new SAP OData API registered on Azure API Management using Basic Authentication
 
-* Open a new browser tab and navigate to the following URL: `https://bestrun-apim.azure-api.net/your-sap-username/sap/opu/odata/iwbep/GWSAMPLE_BASIC/BusinessPartnerSet?sap-client=100&$top=10`
+* Open a new browser tab and navigate to the following URL: `https://bestrun-apim.azure-api.net/your-sap-username/sap/opu/odata/iwbep/GWSAMPLE_BASIC/BusinessPartnerSet?sap-client=100&$top=10&saml2=disabled`
 * Use the provided SAP credentials to authenticate.
 
 ### Call your new SAP OData API using Microsoft Power Automate
