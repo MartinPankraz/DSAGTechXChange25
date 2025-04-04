@@ -12,6 +12,11 @@ Login to Copilot Studio [https://copilotstudio.microsoft.com/](https://copilotst
 > 
 > ![More information](../images/MoreInfo.jpg)
 > 
+> [!Note]
+> and if you get a screen like this, please click on *Skip for now* 
+> ![Skip 14](../images/Skip14.jpg)
+> 
+> 
 > and click on *Skip setup*
 > 
 > ![Skip Setup](../images/SkipSetup.jpg)
@@ -36,6 +41,10 @@ and click on Create to Create your first *Copilot Studio Agent*
 Click on *New agent*
 ![New Agent](../images/NewAgent_3.png)
 <!-- ![New Agent](../images/NewAgent.jpg) -->
+
+> [!Note]
+> Please make sure to select *English* for the Agent Language
+> ![Select English](../images/SetAgentToEnglish.jpg) 
 
 skip the chatbot and click *Skip to configure* in the upper right corner
 

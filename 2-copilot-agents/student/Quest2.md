@@ -91,9 +91,9 @@ Provide the following properties:
 |Name|Value|
 |----|-----|
 |Connection name|PM0-100-GWSAMPLE|
-|OData Base URI|https://bestrun-apim.azure-api.net/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100&saml2=disabled|
+|New OData Base URI|https://bestrun-apim.azure-api.net/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100&saml2=disabled|
 |Username|userXXX|
-|Password|\<as provided\>|
+|SAP Password|\<as provided\> (not the one with 1234)|
 
 ![Create new connection](../../1-copilot-getting-started/images/CreateNewConnection.jpg)
 
@@ -123,7 +123,7 @@ To test the Flow, first Save and Publish the flow, then click on Test. Choose Ma
 ![Publish and Test](../../1-copilot-getting-started/images/PublishAndTest.jpg)
 
 
-For the *SalesORderID* enter ````0500000006````  and click on *Run flow*
+For the *SalesOrderID* enter ````0500000006````  and click on *Run flow*
 ![Test](../images/2_TestFlow.png)
 
 
