@@ -123,7 +123,7 @@ To test the Flow, first Save and Publish the flow, then click on Test. Choose Ma
 ![Publish and Test](../../1-copilot-getting-started/images/PublishAndTest.jpg)
 
 
-For the *SalesORderID* enter ````0500000006````  and click on *Run flow*
+For the *SalesOrderID* enter ````0500000006````  and click on *Run flow*
 ![Test](../images/2_TestFlow.png)
 
 
