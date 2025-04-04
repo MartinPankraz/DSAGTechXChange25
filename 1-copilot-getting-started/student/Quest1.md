@@ -42,6 +42,10 @@ Click on *New agent*
 ![New Agent](../images/NewAgent_3.png)
 <!-- ![New Agent](../images/NewAgent.jpg) -->
 
+> [!Note]
+> Please make sure to select *English* for the Agent Language
+> ![Select English](../images/SetAgentToEnglish.jpg) 
+
 skip the chatbot and click *Skip to configure* in the upper right corner
 
 ![Skip to configure](../images/SkipToConfigure_3.png)
