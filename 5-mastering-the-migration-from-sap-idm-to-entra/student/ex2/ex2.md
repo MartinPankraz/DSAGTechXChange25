@@ -5,7 +5,7 @@ To request assignment to the *SAP BTP Developer* group, an access package is cre
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
-| 2.1    |Use the existing browser window to sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) (use the link [https://aka.ms/EMApprovalExtensibility](https://aka.ms/EMApprovalExtensibility)!) with your user user\<41..70\>@bestruncorp.onmicrosoft.com. |<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
+| 2.1    |Use the existing browser window to sign-in to [Microsoft Entra admin center](https://aka.ms/EMApprovalExtensibility) (use the link [https://aka.ms/EMApprovalExtensibility](https://aka.ms/EMApprovalExtensibility)) with your user user\<41..70\>@bestruncorp.onmicrosoft.com.<br><br>Click **COntinue**.|<a href="./img/2-1.jpg" target="_blank"><img src="./img/2-1.jpg" width="250"/></a>|
 | 2.2    |You are prompted for MFA to login to the Entra Admin Center.|<a href="./img/2-2.jpg" target="_blank"><img src="./img/2-2.jpg" width="250"/></a>|
 | 2.3    |Enter the number in your Microsoft Authenticator.|<a href="./img/2-3.jpg" target="_blank"><img src="./img/2-3.jpg" width="250"/></a>|
 | 2.4    |Select **Catalogs** from the navigation menu. In the search bar, enter your *Student*-number. Select the catalog **Student\<41..80\>** with the number assigned to you from the list.|<a href="./img/2-4.jpg" target="_blank"><img src="./img/2-4.jpg" width="250"/></a>|

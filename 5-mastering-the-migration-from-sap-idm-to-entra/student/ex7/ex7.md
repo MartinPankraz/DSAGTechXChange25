@@ -6,7 +6,7 @@ You will implement this new workflow requirement with another Logic App that wil
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
-| 7.1    |Go back to the first browser tab. Click **Student\<NN\> \| Custom extensions** from the breadcrumb naviation.|<a href="./img/7-1.jpg" target="_blank"><img src="./img/7-1.jpg" width="250"/></a>|
+| 7.1    |Go back to the **first browser tab**.<br><br>Click **Student\<NN\> \| Custom extensions** from the breadcrumb naviation.|<a href="./img/7-1.jpg" target="_blank"><img src="./img/7-1.jpg" width="250"/></a>|
 | 7.2    |Click **+ Add a custom extension**.|<a href="./img/7-2.jpg" target="_blank"><img src="./img/7-2.jpg" width="250"/></a>|
 | 7.3    |Enter a name for the new extension, for example **SendTeamsNotification**, and enter a description.<br><br>Click **Next: Extension Type**.|<a href="./img/7-3.jpg" target="_blank"><img src="./img/7-3.jpg" width="250"/></a>|
 | 7.4    |Select **Request workflow** for the *Extension Type*.<br><br>Click **Next: Extension Configuration**.|<a href="./img/7-4.jpg" target="_blank"><img src="./img/7-4.jpg" width="250"/></a>|
@@ -31,7 +31,7 @@ You will implement this new workflow requirement with another Logic App that wil
 | 7.23   |Select *SendTeamsNotification* for the **Custom Extension**.<br><br>On the second line, select *Assignment is removed* for the **Stage**.|<a href="./img/7-23.jpg" target="_blank"><img src="./img/7-23.jpg" width="250"/></a>|
 | 7.24   |Again, select *SendTeamsNotification* for the **Custom Extension**.<br><br>Click **Update**.|<a href="./img/7-24.jpg" target="_blank"><img src="./img/7-24.jpg" width="250"/></a>|
 | 7.25   |Select **Assignments** from the navigation menu.<br><br>Activate the checkbox for the existing assignment to your *Student user \<NN\>*.<br><br>Click **Remove**. This will trigger the new logic app to send a notification into the SOC team's event channel.|<a href="./img/7-25.jpg" target="_blank"><img src="./img/7-25.jpg" width="250"/></a>|
-| 7.26   |Verify that the event information has been sent. Login to [Microsoft Teams](https://teams.microsoft.com/) with user *sapsentinel@bestruncorp.onmicrosoft.com*.<br><br>Click **Next**.|<a href="./img/7-26.jpg" target="_blank"><img src="./img/7-26.jpg" width="250"/></a>|
+| 7.26   |Verify that the event information has been sent.<br><br>Open a *new incognito windows**.<br><br>Login to [Microsoft Teams](https://teams.microsoft.com/) with user *sapsentinel@bestruncorp.onmicrosoft.com*.<br><br>Click **Next**.|<a href="./img/7-26.jpg" target="_blank"><img src="./img/7-26.jpg" width="250"/></a>|
 | 7.27   |Click **Skip for now**.|<a href="./img/7-27.jpg" target="_blank"><img src="./img/7-27.jpg" width="250"/></a>|
 | 7.28   |Click **Next**.|<a href="./img/7-28.jpg" target="_blank"><img src="./img/7-28.jpg" width="250"/></a>|
 | 7.29   |Select **SAP Sentinel** from the account list.|<a href="./img/7-29.jpg" target="_blank"><img src="./img/7-29.jpg" width="250"/></a>|
