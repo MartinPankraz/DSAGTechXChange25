@@ -6,7 +6,7 @@ the IAM OData service in S/4 HANA by using the available monitoring and troubles
 
 | Step   | Description     | Screenshot          |
 | :----- | :-------------- | :-----------------: |
-| 4.1    |Select **Overview** from the navigation menu. (Select Access Package -> Overview) <br><br>Click **Copy to clipboard** for the *My Access portal link*.|<a href="./img/4-1.jpg" target="_blank"><img src="./img/4-1.jpg" width="250"/></a>|
+| 4.1    |Select **Overview** from the navigation menu. (Select **Access Packages** -> Select Packager **BTP Student <Number>** -> Overview) <br><br>Click **Copy to clipboard** for the *My Access portal link*.|<a href="./img/4-1.jpg" target="_blank"><img src="./img/4-1.jpg" width="250"/></a>|
 | 4.2    |Open a **new browser tab**.<br><br>Paste the *My Access portal URL* into the address bar and hit enter.<br><br>Login with *user\<41..70\>@bestruncorp.onmicrosoft.com.*<br><br>Click **Continue** for starting a new request for the *BTP Student \<NN\>* access package.|<a href="./img/4-2.jpg" target="_blank"><img src="./img/4-2.jpg" width="250"/></a>|
 | 4.3    |Provide the answers to the questions as defined in the *Dynamic approver* policy.<br><br>* Select *SAP BTP* for **Developer role**.<br>* Select *JAVA* or *SAPUI5* for **Context**.<br>* Enter ***DE***, followed by the ***number*** you are assigned to (41..70), for **Company Code**.<br>* Provide a *Business justification*.<br><br>Click **Submit request**.|<a href="./img/4-3.jpg" target="_blank"><img src="./img/4-3.jpg" width="250"/></a>|
 | 4.4    |Wait until your new request has been processed.|<a href="./img/4-4.jpg" target="_blank"><img src="./img/4-4.jpg" width="250"/></a>|
