@@ -46,7 +46,7 @@ Provide the following properties:
 |Name|Value|
 |----|-----|
 |Connection name|PM0-100-GWSAMPLE|
-|OData Base URI|https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100|
+|OData Base URI|https://bestrun-apim.developer.azure-api.net/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100|
 |Username|userXXX|
 |Password|\<as provided\>|
 
