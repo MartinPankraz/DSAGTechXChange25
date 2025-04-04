@@ -7,7 +7,7 @@
 Navigate to the following SAP Gateway URL in your browser to see the metadata of the SAP OData API. You will be prompted for credentials. Use the provided credentials.
 
 ```bash
-https://bestrun-apim.azure-api.net/martinp/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100
+https://bestrun-apim.azure-api.net/martinp/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100&saml2=disabled
 ```
 
 See the entity `BusinessPartnerSet`
