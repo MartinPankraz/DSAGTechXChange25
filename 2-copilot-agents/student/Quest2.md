@@ -93,7 +93,7 @@ Provide the following properties:
 |Connection name|PM0-100-GWSAMPLE|
 |New OData Base URI|https://bestrun-apim.azure-api.net/sap/opu/odata/iwbep/GWSAMPLE_BASIC?sap-client=100&saml2=disabled|
 |Username|userXXX|
-|Password|\<as provided\>|
+|SAP Password|\<as provided\> (not the one with 1234)|
 
 ![Create new connection](../../1-copilot-getting-started/images/CreateNewConnection.jpg)
 

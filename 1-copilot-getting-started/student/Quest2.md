@@ -48,7 +48,7 @@ Provide the following properties:
 |Connection name|PM0-100-GWSAMPLE|
 |New OData Base URI|https://bestrun-apim.azure-api.net/sap/opu/odata/iwbep/GWSAMPLE_BASIC?saml2=disabled&sap-client=100 |
 |Username|userXXX|
-|Password|\<as provided\>|
+|SAP Password|\<as provided\> (not the one with 1234)|
 
 ![Create new connection](../images/CreateNewConnection.jpg)
 
