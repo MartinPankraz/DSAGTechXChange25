@@ -52,6 +52,10 @@ Click on Create to Create your first *Copilot Studio Agent*
 Click on *New agent*
 ![New Agent](../../1-copilot-getting-started/images/NewAgent_3.png)
 
+> [!Note]
+> Please make sure to select *English* for the Agent Language
+> ![Select English](../../1-copilot-getting-started/images/SetAgentToEnglish.jpg) 
+
 If you find yourself in a chat experience click on **Skip to configure** on the top right.
 ![Skip to configure](../../1-copilot-getting-started/images/SkipToConfigure_3.png)
 

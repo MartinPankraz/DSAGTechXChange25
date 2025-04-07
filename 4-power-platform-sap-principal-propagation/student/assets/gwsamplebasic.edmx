@@ -541,8 +541,8 @@
         </FunctionImport>
       </EntityContainer>
       <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm" />
-      <atom:link rel="self" href="https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC/$metadata" xmlns:atom="http://www.w3.org/2005/Atom" />
-      <atom:link rel="latest-version" href="https://microsoftintegrationdemo.com:44300/sap/opu/odata/iwbep/GWSAMPLE_BASIC/$metadata" xmlns:atom="http://www.w3.org/2005/Atom" />
+      <atom:link rel="self" href="https://bestrun-apim.azure-api.net/martinp/sap/opu/odata/iwbep/GWSAMPLE_BASIC/$metadata" xmlns:atom="http://www.w3.org/2005/Atom" />
+      <atom:link rel="latest-version" href="https://bestrun-apim.azure-api.net/martinp/sap/opu/odata/iwbep/GWSAMPLE_BASIC/$metadata" xmlns:atom="http://www.w3.org/2005/Atom" />
     </Schema>
   </edmx:DataServices>
 </edmx:Edmx>
