@@ -101,7 +101,7 @@ Run below commands using the CLI of Evilginx3 to configure the tool.
 
 ```bash
 config ipv4 127.0.0.1
-config domain dsag-red-YourUserNo.com
+config domain dsag-red-userzzz.com
 ```
 
 > [!CAUTION]
@@ -171,7 +171,7 @@ phishlets
 Run below commands using the CLI of Evilginx3 to prepare the phishing lure.
 
 ```bash
-phishlets hostname microsoft365 dsag-red-YourUserNo.com
+phishlets hostname microsoft365 dsag-red-userzzz.com
 phishlets enable microsoft365 
 ```
 
@@ -214,7 +214,7 @@ lures get-url 0
 <img alt="creat fishing lure" src="assets/quest1/create-phishing-lure.png"  width="600">
 </p>
 
-* Open the generated URL (https://login.dsag-red-YourUserNo.com/some-key) in your browser to see the phishing page (see right part of below image for reference).
+* Open the generated URL (https://login.dsag-red-userzzz.com/some-key) in your browser to see the phishing page (see right part of below image for reference).
 
 > [!IMPORTANT]
 > The redirect/ infinite loop of logins you see is due to our simple phishlet setup. But that is ok, your session is recorded. Still a hacker would invest a little more to avoid this as it might tip off their efforts.
