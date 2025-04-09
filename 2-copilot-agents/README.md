@@ -1,4 +1,4 @@
-# Copilot Studio & SAP: Getting started
+# Copilot Studio & SAP Building Autonomous Agents
 ** [🤖 Quest 1 >](student/Quest1.md)
 
 ## 1. Introduction
